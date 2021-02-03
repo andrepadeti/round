@@ -24,8 +24,11 @@ const Navigation = () => {
               <Link href="/index">
                 <Nav.Link>Home</Nav.Link>
               </Link>
+              <Link href="/cursos">
+                <Nav.Link>Cursos</Nav.Link>
+              </Link>
               <Link href="/about">
-                <Nav.Link>Quem Sou</Nav.Link>
+                <Nav.Link>O Professor</Nav.Link>
               </Link>
               <Link href="/contact">
                 <Nav.Link>Contato</Nav.Link>
