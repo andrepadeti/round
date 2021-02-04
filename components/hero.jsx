@@ -9,7 +9,7 @@ const Hero = () => {
           Venha estudar inglês com quem tem mais de 20 anos de experiência
           formando alunos para o mercado.
         </p>
-        <button type="button" className="btn btn-primary btn-lg">
+        <button type="button" className="btn btn-primary text-light btn-lg">
           Saiba mais
         </button>
       </div>

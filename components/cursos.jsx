@@ -4,7 +4,7 @@ import SectionTitle from './sectionTitle'
 const Cursos = () => {
   return (
     <>
-      <SectionTitle title="Cursos" />
+      <SectionTitle title="Cursos" id='cursos' />
       <h4 className='fw-normal mb-5 w-75 m-auto'>
         Se você quer fechar negócio com o cliente estrangeiro, garantir a
         promoção no trabalho ou ter a oportunidade de viajar, então você está no

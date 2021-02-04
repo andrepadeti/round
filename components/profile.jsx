@@ -4,7 +4,7 @@ import SectionTitle from './sectionTitle'
 const Profile = () => {
   return (
     <>
-      <SectionTitle title="O Professor" />
+      <SectionTitle title="O Professor" id='about' />
       <div className="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-start align-items-md-center p-3">
         <div className="flex-shrink-1 pe-2">
           <p>Olá,</p>

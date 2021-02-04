@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Navigation = () => {
   return (
     <>
-      <Navbar className='bg-nav' expand="md">
+      <Navbar className='bg-light' expand="md" sticky='top'>
         <div className="container bg-nav">
           <Navbar.Brand className="d-flex">
             <Image
@@ -24,13 +24,13 @@ const Navigation = () => {
               <Link href="/index">
                 <Nav.Link>Home</Nav.Link>
               </Link>
-              <Link href="/cursos">
+              <Link href="#cursos" passHref>
                 <Nav.Link>Cursos</Nav.Link>
               </Link>
-              <Link href="/about">
+              <Link href="#about" passHref>
                 <Nav.Link>O Professor</Nav.Link>
               </Link>
-              <Link href="/contact">
+              <Link href="#contato" passHref>
                 <Nav.Link>Contato</Nav.Link>
               </Link>
             </Nav>
