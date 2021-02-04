@@ -3,17 +3,29 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="container-fluid" id='contato'>
+    <footer className="container-fluid" id="contato">
       <div className="row py-3 px-5 justify-content-center align-items-center bg-secondary text-light border-bottom">
-        <div className="col-md-4 col-sm-12 text-center text-md-left mb-4 mb-md-0">
+        {/* <div className="col-md-5 col-sm-12 text-center text-md-left mb-4 mb-md-0">
           <h5 className="mb-0">Siga-nos nas mídias sociais!</h5>
-        </div>
+        </div> */}
         <div className="col-md-4 col-sm-12 text-center text-md-left pl-md-5">
-          <a href="https://www.facebook.com/roundenglish" className="me-4 text-light">
-            <FontAwesomeIcon icon={['fab', 'facebook']} size='2x' />
+          <a
+            href="https://www.facebook.com/roundenglish"
+            className="me-5 text-light"
+          >
+            <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" />
           </a>
-          <a href="https://www.instagram.com/round.english" className='text-light'>
+          <a
+            href="https://www.instagram.com/round.english"
+            className="me-5 text-light"
+          >
             <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/andrepadeti/"
+            className="text-light"
+          >
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
           </a>
         </div>
       </div>
@@ -29,7 +41,7 @@ const Footer = () => {
           <h5>Contato</h5>
           <hr style={{ width: '60px' }} />
           <p>
-            <a href="mailto:cafe@gmail.com" className='text-light'>
+            <a href="mailto:cafe@gmail.com" className="text-light">
               <FontAwesomeIcon icon={['fa', 'envelope']} className="me-2" />
               contato@roundenglish.com.br
             </a>
@@ -43,11 +55,16 @@ const Footer = () => {
 
       <div className="row py-3 bg-secondary text-light">
         <div className="d-flex justify-content-center">
-          <div >
+          <div>
             Copyright &#169; {new Date().getFullYear()}
-            <a href="mailto:andrepadeti@hotmail.com" className='text-light'>
+            <a href="mailto:andrepadeti@hotmail.com" className="text-light">
               <FontAwesomeIcon icon={['fa', 'envelope']} className="mx-2" />
-              <Image src='/images/avatar.png' width={15} height={15} layout='fixed' />
+              <Image
+                src="/images/avatar.png"
+                width={15}
+                height={15}
+                layout="fixed"
+              />
               <span className="ms-2">André Padeti</span>
             </a>
           </div>

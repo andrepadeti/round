@@ -16,34 +16,35 @@ const Navigation = () => {
               height={30}
               layout="fixed"
             />
-            <span className="ms-1">Round English</span>
+            <span className="ms-1 fw-bolder">Round English</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ms-auto">
-              <Link href="/index">
-                <Nav.Link>Home</Nav.Link>
+              <Link href="#hero" passHref>
+                <Nav.Link><span className="nav-link">Home</span></Nav.Link>
               </Link>
               <Link href="#cursos" passHref>
-                <Nav.Link>Cursos</Nav.Link>
+                <Nav.Link><span className='nav-link'>Cursos</span></Nav.Link>
               </Link>
               <Link href="#about" passHref>
-                <Nav.Link>O Professor</Nav.Link>
+                <Nav.Link><span className='nav-link'>O Professor</span></Nav.Link>
               </Link>
               <Link href="#contato" passHref>
-                <Nav.Link>Contato</Nav.Link>
+                <Nav.Link><span className='nav-link'>Contato</span></Nav.Link>
               </Link>
             </Nav>
           </Navbar.Collapse>
         </div>
       </Navbar>
-      {/* <style jsx>
+      <style jsx>
         {`
-          .container {
-            width: 700px;
+          .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
           }
         `}
-      </style> */}
+      </style>
     </>
   )
 }

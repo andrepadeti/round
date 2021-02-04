@@ -4,13 +4,17 @@ import SectionTitle from './sectionTitle'
 const Cursos = () => {
   return (
     <>
-      <SectionTitle title="Cursos" id='cursos' />
-      <h4 className='fw-normal mb-5 w-75 m-auto'>
-        Se você quer fechar negócio com o cliente estrangeiro, garantir a
-        promoção no trabalho ou ter a oportunidade de viajar, então você está no
-        lugar certo! Os cursos são feitos sob medida para atender às suas
-        necessidades mais imediatas.
-      </h4>
+      <SectionTitle title="Cursos" id="cursos" />
+      <div className="row">
+        <div className="col-12 col-md-8 m-auto">
+          <p className="fs-5 mb-5">
+            Se você quer fechar negócio com o cliente estrangeiro, garantir a
+            promoção no trabalho ou ter a oportunidade de viajar, então você
+            está no lugar certo! Os cursos são feitos sob medida para atender às
+            suas necessidades mais imediatas.
+          </p>
+        </div>
+      </div>
       <Card
         title="Cursos Regulares"
         text="Aulas comunicativas para quem precisa melhorar o inglês para os mais variados fins."
