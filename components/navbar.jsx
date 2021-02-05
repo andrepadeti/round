@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false)
@@ -32,28 +33,34 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ms-auto">
-              <Link href="#hero" passHref>
+              <Link href="/#hero" passHref>
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
                     Home
                   </span>
                 </Nav.Link>
               </Link>
-              <Link href="#cursos" passHref>
+              {/* <NavDropdown title='Cursos' id='cursos' className='cursos'>
+                <NavDropdown.Item>Regulares</NavDropdown.Item>
+                <NavDropdown.Item>Propósitos Específicos</NavDropdown.Item>
+                <NavDropdown.Item>Exames Internacionais</NavDropdown.Item>
+                <NavDropdown.Item>Presentations/Negotiations</NavDropdown.Item>
+              </NavDropdown> */}
+              <Link href="/#cursos" passHref>
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
                     Cursos
                   </span>
                 </Nav.Link>
               </Link>
-              <Link href="#about" passHref>
+              <Link href="/#about" passHref>
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
                     O Professor
                   </span>
                 </Nav.Link>
               </Link>
-              <Link href="#contato" passHref>
+              <Link href="/#contato" passHref>
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
                     Contato
@@ -67,6 +74,12 @@ const Navigation = () => {
       <style jsx>
         {`
           .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            // color: #6c63ff !important;
+          }
+
+          .cursos {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             // color: #6c63ff !important;

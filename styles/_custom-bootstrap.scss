@@ -14,6 +14,17 @@ $custom-colors: (
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';
 
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 12
+);
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $font-sizes: (

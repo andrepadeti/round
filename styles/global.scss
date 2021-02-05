@@ -12,7 +12,21 @@ body {
   background-color: #f3f2e5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   color: $primary;
+}
+
+.white-space {
+  &-top {
+    margin-top: 7rem;
+  }
+  &-bottom {
+    margin-bottom: 7rem;
+  }
 }

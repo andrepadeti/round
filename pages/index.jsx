@@ -1,13 +1,13 @@
 import Head from 'next/head'
+import Contact from '../components/contact'
 import Cursos from '../components/cursos'
 import Hero from '../components/hero'
 import Layout, { siteTitle } from '../components/layout'
 import Profile from '../components/profile'
-import utilStyles from '../styles/utils.module.sass'
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout page='home'>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -15,6 +15,7 @@ export default function Home() {
         <Hero />
         <Cursos />
         <Profile />
+        <Contact />
       </div>
     </Layout>
   )

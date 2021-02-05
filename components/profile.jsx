@@ -4,7 +4,7 @@ import SectionTitle from './sectionTitle'
 const Profile = () => {
   return (
     <>
-      <SectionTitle title="O Professor" id='about' />
+      <SectionTitle title="O Professor" id="about" />
       <div className="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-start align-items-md-center p-3">
         <div className="flex-shrink-1 pe-2">
           <p>Olá,</p>
@@ -46,16 +46,17 @@ const Profile = () => {
           </p>
           <p>
             Sou membro da Braz-Tesol, a associação brasileira de professores de
-            inglês, onde participo de congressos e outros eventos para reciclar
-            o conhecimento e poder oferecer o melhor curso para você!
-          </p>
-          <p>
-            Este é o meu{' '}
-            <a href="https://www.linkedin.com/in/andrepadeti/">LinkedIn</a>.
+            inglês, onde participo de congressos e eventos para reciclar o
+            conhecimento e poder oferecer o melhor curso para você!
           </p>
         </div>
-        <div className="w-100">
-          <Image src="/images/myself.jpg" width={1449} height={1631} className='img-thumbnail' />
+        <div className="w-100 p-4 p-md-0">
+          <Image
+            src="/images/myself.jpg"
+            width={1449}
+            height={1631}
+            className="img-thumbnail"
+          />
         </div>
       </div>
     </>

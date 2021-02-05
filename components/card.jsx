@@ -19,7 +19,9 @@ const Card = ({ title, text, link, image }) => {
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{text}</p>
             <Link href={link}>
-              <button className="btn btn-primary text-light">Saiba mais</button>
+              <button className="btn btn-primary text-light shadow">
+                Saiba mais
+              </button>
             </Link>
           </div>
         </div>

@@ -18,25 +18,25 @@ const Cursos = () => {
       <Card
         title="Cursos Regulares"
         text="Aulas comunicativas para quem precisa melhorar o inglês para os mais variados fins."
-        link=""
+        link="/cursos/cursos-regulares"
         image="general"
       />
       <Card
         title="Propósitos Específicos"
         text="Este curso é para quem precisa aprender a tratar de assuntos como: TI • Bancos • Logística • Contabilidade e outros temas."
-        link=""
+        link="/cursos/propositos-especificos"
         image="esp"
       />
       <Card
         title="Exames Internacionais"
         text="Para você se preparar para exames internacionais: TOEFL • IELTS • FCE • CAE • CPE."
-        link=""
+        link="/cursos/exames"
         image="exams"
       />
       <Card
         title="Presentations / Business Negotiations"
         text="Se você precisa fazer apresentações e negociações em inglês, este é um curso focado no vocabulário e expressões específicos para esses fins."
-        link=""
+        link="/cursos/presentations"
         image="presentations"
       />
     </>
