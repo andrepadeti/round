@@ -61,9 +61,10 @@ const Footer = () => {
               <FontAwesomeIcon icon={['fa', 'envelope']} className="mx-2" />
               <Image
                 src="/images/avatar.png"
-                width={15}
-                height={15}
+                width={18}
+                height={18}
                 layout="fixed"
+                className='rounded-circle'
               />
               <span className="ms-2">André Padeti</span>
             </a>
