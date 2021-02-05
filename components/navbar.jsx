@@ -16,7 +16,7 @@ const Navigation = () => {
               height={30}
               layout="fixed"
             />
-            <span className="ms-1 fw-bolder">Round English</span>
+            <span className="ms-1 logo">Round English</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
@@ -42,6 +42,16 @@ const Navigation = () => {
           .nav-link {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
+            // color: #6c63ff !important;
+          }
+
+          .nav-link:hover {
+            color: #2b2b55 !important;
+          }
+
+          .logo {
+            font-weight: 700;
+            // color: #6c63ff;
           }
         `}
       </style>

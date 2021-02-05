@@ -31,15 +31,15 @@ const Footer = () => {
       </div>
 
       <div className="row pt-3 bg-secondary text-light justify-content-center border-bottom">
-        <div className="col-md-4 col-sm-12 ps-5 mb-4 mb-md-0">
+        <div className="col-md-4 col-sm-12 ps-5 ps-md-4 mb-4 mb-md-0">
           <h5>Round English</h5>
-          <hr style={{ width: '60px' }} />
+          <hr style={{ width: '150px' }} />
           <p>Desenvolva seu potencial.</p>
         </div>
 
-        <div className="col-md-4 col-sm-12 ps-5">
+        <div className="col-md-4 col-sm-12 ps-5 ps-md-4">
           <h5>Contato</h5>
-          <hr style={{ width: '60px' }} />
+          <hr style={{ width: '80px' }} />
           <p>
             <a href="mailto:cafe@gmail.com" className="text-light">
               <FontAwesomeIcon icon={['fa', 'envelope']} className="me-2" />
@@ -70,6 +70,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        h1, h2, h3, h4, h5, h6 {
+          color: #f2f1eb;
+        }
+      `}
+
+      </style>
     </footer>
   )
 }
