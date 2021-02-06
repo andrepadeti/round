@@ -41,7 +41,7 @@ const Footer = () => {
           <h5>Contato</h5>
           <hr style={{ width: '80px' }} />
           <p>
-            <a href="mailto:cafe@gmail.com" className="text-light">
+            <a href="mailto:contato@roundenglish.com.br" className="text-light">
               <FontAwesomeIcon icon={['fa', 'envelope']} className="me-2" />
               contato@roundenglish.com.br
             </a>
