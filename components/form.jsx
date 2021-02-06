@@ -7,12 +7,12 @@ const Form = () => {
       body: JSON.stringify({
         name: e.target.name.value,
         email: e.target.email.value,
-        message: e.target.message.value
+        message: e.target.message.value,
       }),
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      method: 'POST'
+      method: 'POST',
     })
 
     const result = await res.json()
@@ -27,7 +27,13 @@ const Form = () => {
             <label htmlFor="name" className="form-label">
               Nome
             </label>
-            <input type="text" className="form-control" id="name" autoComplete='name' required />
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              autoComplete="name"
+              required
+            />
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
@@ -37,7 +43,7 @@ const Form = () => {
               type="email"
               className="form-control"
               id="email"
-              autoComplete='email'
+              autoComplete="email"
               required
               aria-describedby="emailHelp"
             />
@@ -49,9 +55,14 @@ const Form = () => {
             <label htmlFor="message" className="form-label">
               Mensagem
             </label>
-            <textarea className="form-control" id="message" rows="3" required></textarea>
+            <textarea
+              className="form-control"
+              id="message"
+              rows="3"
+              required
+            ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary text-light">
             Enviar
           </button>
         </form>

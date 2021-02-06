@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { NavDropdown } from 'react-bootstrap'
+// import { NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false)
@@ -11,6 +11,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar
+      id='navbar'
         className="bg-light"
         expand="md"
         sticky="top"

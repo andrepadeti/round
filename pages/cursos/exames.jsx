@@ -14,7 +14,7 @@ const Exames = () => {
   const button = { label: 'Quero fazer uma entrevista gratuita!', link: ''}
 
   return (
-    <Layout page="regular">
+    <Layout page="exams">
       <Head>
         <title>{siteTitle}</title>
       </Head>

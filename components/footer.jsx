@@ -64,19 +64,24 @@ const Footer = () => {
                 width={18}
                 height={18}
                 layout="fixed"
-                className='rounded-circle'
+                className="rounded-circle"
               />
               <span className="ms-2">André Padeti</span>
             </a>
           </div>
         </div>
       </div>
-      <style jsx>{`
-        h1, h2, h3, h4, h5, h6 {
-          color: #f2f1eb;
-        }
-      `}
-
+      <style jsx>
+        {`
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: #f2f1eb;
+          }
+        `}
       </style>
     </footer>
   )

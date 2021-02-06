@@ -12,7 +12,7 @@ const Regular = () => {
   const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (
-    <Layout page="regular">
+    <Layout page="general">
       <Head>
         <title>{siteTitle}</title>
       </Head>

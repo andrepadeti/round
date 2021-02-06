@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -10,9 +11,14 @@ const Hero = () => {
             Venha estudar inglês com quem tem mais de 20 anos de experiência
             formando alunos para o mercado.
           </p>
-          <button type="button" className="btn btn-primary text-light btn-lg shadow">
-            Agende uma entrevista
-          </button>
+          <Link href="/#contato">
+            <button
+              type="button"
+              className="btn btn-primary text-light btn-lg shadow"
+            >
+              Agende uma entrevista
+            </button>
+          </Link>
         </div>
         <div className="col-12 col-md-6">
           <Image
