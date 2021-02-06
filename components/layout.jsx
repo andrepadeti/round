@@ -1,6 +1,10 @@
+import { useState } from 'react'
+
+import Context from '../context/context'
 import Head from 'next/head'
 import Footer from './footer'
 import Navigation from './navbar'
+import ContactModal from './modal'
 
 // begin font awesome initialization
 // The following import prevents a Font Awesome icon server-side rendering bug,
@@ -25,6 +29,8 @@ const name = 'PadetiIT'
 export const siteTitle = 'Round English'
 
 export default function Layout({ children, page }) {
+  const [modal, setModal] = useState({show: false, message: []})
+
   return (
     <>
       <Head>
@@ -42,9 +48,12 @@ export default function Layout({ children, page }) {
         <meta property="fb:app_id" content="your_app_id" />
         <meta name="twitter:site" content="@RoundEnglish" />
       </Head>
-      <Navigation />
-      <main>{children}</main>
-      <Footer />
+      <Context.Provider value={{ modal, setModal }}>
+        <ContactModal />
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
+      </Context.Provider>
     </>
   )
 }

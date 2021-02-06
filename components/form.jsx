@@ -1,32 +1,43 @@
-import { useFormik } from 'formik'
+import { useContext } from 'react'
+import Context from '../context/context'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
 const sleep = ms => new Promise(r => setTimeout(r, ms))
 
 const ContactForm = () => {
+  let { modal, setModal } = useContext(Context)
+
   // TODO formspree is validating email better then yup, causing a bug
-  const submit = async (values, {setSubmitting, resetForm}) => {
-    console.log(values.name)
-    const res = await fetch('https://formspree.io/f/myybvnvk', {
-      body: JSON.stringify({
-        name: values.name,
-        email: values.email,
-        message: values.message
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    })
-
-    const result = await res.json()
-    console.log(result)
-
+  const submit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      const res = await fetch('https://formspree.io/f/myybvnvk', {
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          message: values.message,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      })
+      const result = await res.json()
+      console.log(result)
+      const message = result.ok
+        ? ['Formulário enviado com sucesso.', 'Em breve entrarei em contato.']
+        : ['Falha ao enviar.', 'Por favor, tente novamente ou envie um email.']
+      setModal({ show: true, message })
+      if (result.ok) resetForm()
+    } catch (error) {
+      console.log(error)
+      const message = [
+        'Falha ao enviar.',
+        'Por favor, tente novamente ou envie um email.',
+      ]
+      setModal({ show: true, message })
+    }
     setSubmitting(false) // maybe not necessary?
-    const message = result.ok ? 'Formulário enviado' : 'Falha ao enviar'
-    alert(message)
-    result.ok && resetForm() 
   }
 
   return (
@@ -44,7 +55,10 @@ const ContactForm = () => {
               .max(20, 'Tamanho máximo: 20 caracteres')
               .required('Campo obrigatório.'),
             email: Yup.string()
-              .email('Endereço de email inválido.')
+              // .matches(
+              //   /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+              //   'Endereço de email inválido.'
+              // )
               .required('Campo obrigatório.'),
             message: Yup.string()
               .min(15, 'Tamanho mínimo: 15 caracteres')
@@ -110,9 +124,16 @@ const ContactForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || !isValid}
-                className="btn btn-primary text-light"
+                className="btn btn-primary text-light me-3"
               >
                 Enviar
+              </button>
+              <button
+                disabled={isSubmitting}
+                className="btn btn-light border border-primary text-primary"
+                onClick={handleReset}
+              >
+                Apagar
               </button>
             </Form>
           )}

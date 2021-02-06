@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar
-      id='navbar'
+        id="navbar"
         className="bg-light"
         expand="md"
         sticky="top"

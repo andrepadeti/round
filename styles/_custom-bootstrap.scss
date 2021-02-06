@@ -5,10 +5,12 @@ $info: #2b2b55;
 $warning: #d28849;
 $danger: #f44336;
 $light: #f2f1eb;
+$darker: #f2f1eba9;
 $dark: #2b2b55;
 
 $custom-colors: (
   "light": $light,
+  "darker": $darker
 );
 
 @import 'node_modules/bootstrap/scss/functions';

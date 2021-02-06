@@ -1,0 +1,60 @@
+import { useContext } from 'react'
+import Modal from 'react-bootstrap/Modal'
+import Context from '../context/context'
+import Image from 'next/image'
+
+const ContactModal = () => {
+  let { modal, setModal } = useContext(Context)
+
+  const handleClick = () => {
+    setModal({ show: false })
+  }
+
+  return (
+    <Modal show={modal.show} onHide={() => setModal({ show: false })} centered>
+      <div className="d-flex flex-column align-items-center p-3">
+        <div className="d-flex align-items-center mb-3">
+          <Image
+            src="/images/bare-logo.png"
+            alt="logo"
+            width={20}
+            height={20}
+            layout="fixed"
+          />
+          <span className="ms-1 logo">Round English</span>
+        </div>
+        <div className='mb-2'>
+          <p className='text-center'>
+            {modal.message &&
+              modal.message.map((line, index) => (
+                <span>
+                  {line}
+                  <br />
+                </span>
+              ))}
+          </p>
+        </div>
+        <div>
+          <button
+            className="btn btn-secondary"
+            type="button"
+            onClick={handleClick}
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+      <style jsx>
+        {`
+          button {
+            width: 5rem;
+          }
+          .logo {
+            font-weight: 700;
+        `}
+      </style>
+    </Modal>
+  )
+}
+
+export default ContactModal
