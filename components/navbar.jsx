@@ -12,7 +12,7 @@ const Navigation = () => {
     <>
       <Navbar
         id="navbar"
-        className="bg-light"
+        className="bg-light shadow"
         expand="md"
         sticky="top"
         onToggle={() => {
@@ -20,17 +20,19 @@ const Navigation = () => {
         }}
         expanded={expanded}
       >
-        <div className="container bg-nav">
-          <Navbar.Brand className="d-flex">
-            <Image
-              src="/images/bare-logo.png"
-              alt="logo"
-              width={30}
-              height={30}
-              layout="fixed"
-            />
-            <span className="ms-1 logo">Round English</span>
-          </Navbar.Brand>
+        <div className="container">
+          <Link href="/">
+            <Navbar.Brand className="d-flex">
+              <Image
+                src="/images/bare-logo-transparent.png"
+                alt="logo"
+                width={30}
+                height={30}
+                layout="fixed"
+              />
+              <span className="ms-1 logo">Round English</span>
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="ms-auto">
@@ -78,6 +80,10 @@ const Navigation = () => {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             // color: #6c63ff !important;
+          }
+
+          container {
+            background-color: inherit;
           }
 
           .cursos {
