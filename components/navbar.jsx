@@ -22,7 +22,7 @@ const Navigation = () => {
       >
         <div className="container">
           <Link href="/">
-            <Navbar.Brand className="d-flex">
+            <a className="d-flex navbar-brand">
               <Image
                 src="/images/bare-logo-transparent.png"
                 alt="logo"
@@ -31,7 +31,7 @@ const Navigation = () => {
                 layout="fixed"
               />
               <span className="ms-1 logo">Round English</span>
-            </Navbar.Brand>
+            </a>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
@@ -97,8 +97,8 @@ const Navigation = () => {
           }
 
           .logo {
-            font-weight: 700;
-            // color: #6c63ff;
+            font-weight: 800;
+            color: inherit;
           }
         `}
       </style>

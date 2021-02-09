@@ -23,8 +23,8 @@ const ContactModal = () => {
           />
           <span className="ms-1 logo">Round English</span>
         </div>
-        <div className='mb-2'>
-          <p className='text-center'>
+        <div className="mb-2">
+          <p className="text-center">
             {modal.message &&
               modal.message.map((line, index) => (
                 <span>
@@ -51,6 +51,7 @@ const ContactModal = () => {
           }
           .logo {
             font-weight: 700;
+          }
         `}
       </style>
     </Modal>

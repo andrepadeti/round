@@ -1,21 +1,20 @@
-$primary: #6c63ff; // this is the color of the svg files
-$secondary: #745f81;
-$success: #559881;
-$info: #2b2b55;
-$warning: #d28849;
-$danger: #f44336;
-$light: #f2f1eb;
-$darker: #f2f1eba9;
-$dark: #2b2b55;
+$primary: #6961ff; // this is the color of the svg files
+$secondary: hsl(277, 15%, 44%);
+$success: hsl(159, 28%, 46%);
+$info: hsl(240, 33%, 25%);
+$warning: hsl(28, 60%, 55%);
+$danger: hsl(4, 90%, 58%);
+$light: hsl(51, 21%, 94%);
+$darker: hsla(51, 21%, 94%, 0.663);
+$dark: hsl(240, 33%, 25%);
 
 $custom-colors: (
-  "light": $light,
-  "darker": $darker
+  'darker': $darker,
 );
-
 
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
 
 $spacers: (
   0: 0,
@@ -25,7 +24,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 6,
-  7: $spacer * 12
+  7: $spacer * 12,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -40,10 +39,12 @@ $font-sizes: (
   7: 0.875rem,
 );
 
-$font-weight-base: $font-weight-light; 
-
-$font-family-sans-serif:      'Inter', sans-serif, system-ui;
+$font-family-sans-serif: 'Inter', sans-serif, system-ui;
 // $font-family-sans-serif:      'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-weight-base: $font-weight-light;
+$body-color: hsl(243, 100%, 15%); // same hue as the color theme but darker (avoid black!)
+$body-bg: $light;
 
-@import 'bootstrap/scss/bootstrap.scss';
 
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';

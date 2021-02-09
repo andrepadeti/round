@@ -124,13 +124,14 @@ const ContactForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || !isValid}
-                className="btn btn-primary shadow text-light me-3"
+                className="btn btn-primary shadow me-3"
               >
                 Enviar
               </button>
               <button
                 disabled={isSubmitting}
-                className="btn btn-light border shadow border-primary text-primary"
+                // className="btn btn-light border shadow border-primary text-primary"
+                className="btn btn-outline-primary shadow"
                 onClick={handleReset}
               >
                 Apagar

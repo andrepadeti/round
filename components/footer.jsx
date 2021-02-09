@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 
+const color = 'red'
+
 const Footer = () => {
   return (
     <footer className="container-fluid">
@@ -79,7 +81,7 @@ const Footer = () => {
           h4,
           h5,
           h6 {
-            color: #f2f1eb;
+            color: hsl(51, 21%, 94%);
           }
         `}
       </style>

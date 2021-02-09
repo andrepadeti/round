@@ -7,7 +7,7 @@ import Profile from '../components/profile'
 
 export default function Home() {
   return (
-    <Layout page="home">
+    <Layout page="home" theme={'white'}>
       <Head>
         <title>{siteTitle}</title>
       </Head>
