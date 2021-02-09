@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Card = ({ title, text, link, image }) => {
   return (
-    <div className="card mb-3 p-4 m-auto">
+    <div className="card bg-lighter mb-3 p-4 m-auto">
       <div className="row">
         <div className="col-md-4 text-center">
           <Image

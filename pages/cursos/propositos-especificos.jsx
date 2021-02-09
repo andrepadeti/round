@@ -5,6 +5,7 @@ import CourseDetails from '../../components/course-details'
 const Regular = () => {
   const title = 'Propósitos Específicos'
   const image = 'esp'
+  const alt = 'Cursos oferecidos. Inglês para propósitos específicos. TI, bancos, logística, contabilidade e outros temas específicos.'
   const body = [
     'O mercado pede cada vez mais que você seja capaz de trabalhar em parceria com profissionais de outros países e essa comunicação se dá, é claro, em inglês.',
     'Você não pode perder a oportunidade de trabalhar em um grupo profissional internacional só porque você não consegue se comunicar em inglês na sua área de atuação.',
@@ -16,9 +17,9 @@ const Regular = () => {
   return (
     <Layout page="esp">
       <Head>
-        <title>{siteTitle}</title>
+        <title>{`${siteTitle} - Cursos - ${title}`}</title>
       </Head>
-      <CourseDetails title={title} image={image} body={body} button={button} />
+      <CourseDetails title={title} image={image} alt={alt} body={body} button={button} />
     </Layout>
   )
 }

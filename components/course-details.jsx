@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const CourseDetails = ({ title, image, body, button }) => {
+const CourseDetails = ({ title, image, alt, body, button }) => {
   return (
     <>
       <div className="container">
@@ -12,6 +12,7 @@ const CourseDetails = ({ title, image, body, button }) => {
           <div className="col-12 col-md-6">
             <Image
               src={`/images/${image}.svg`}
+              alt={alt}
               width={350}
               height={350}
               layout="responsive"
@@ -29,8 +30,8 @@ const CourseDetails = ({ title, image, body, button }) => {
         </div>
         <div className="row mb-7">
           <div className="col-12 d-flex justify-content-center">
-            <Link href='/#contato'>
-              <button className="btn btn-lg btn-primary text-light shadow">
+            <Link href="/#contato">
+              <button className="btn btn-lg btn-primary shadow">
                 {button.label}
               </button>
             </Link>

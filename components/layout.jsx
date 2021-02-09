@@ -23,8 +23,10 @@ import {
   faEnvelope,
   faBuilding,
   faPhone,
+  faBars,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons'
-library.add(faHeartBroken, faEnvelope, faBuilding, faPhone, fab)
+library.add(faHeartBroken, faEnvelope, faBuilding, faPhone, faBars, faTimes, fab)
 // end font awesome initialization
 
 const name = 'PadetiIT'
@@ -37,10 +39,12 @@ export default function Layout({ children, page }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         {/* Essential META Tags */}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name='viewport' content="width=device-width, initial-scale=1"></meta>
         <meta property="og:title" content="Round English" />
-        <meta property="og:description" content="Inglês para toda a vida." />
-        <meta property="og:image" content="http://..." />
-        <meta property="og:url" content="http://..." />
+        <meta property="og:description" content="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge." />
+        <meta property="og:image" content="https://roundenglish.com.br/_next/image?url=%2Fimages%2Fhero.svg&w=1920&q=75" />
+        <meta property="og:url" content="https://roundenglish.com.br/" />
         <meta name="twitter:card" content="summary_large_image" />
         {/* Non-Essential, But Recommended */}
         <meta property="og:site_name" content="Round English" />
@@ -69,12 +73,12 @@ export default function Layout({ children, page }) {
           $info: hsl(240, 33%, 25%);
           $warning: hsl(28, 60%, 55%);
           $danger: hsl(4, 90%, 58%);
+          $lighter: hsl(51, 21%, 96%);
           $light: hsl(51, 21%, 94%);
-          $darker: hsla(51, 21%, 94%, 0.663);
           $dark: hsl(240, 33%, 25%);
 
           $custom-colors: (
-            'darker': $darker,
+            'lighter': $lighter,
           );
 
           @import 'node_modules/bootstrap/scss/functions';
@@ -108,7 +112,7 @@ export default function Layout({ children, page }) {
           /* $font-family-sans-serif:      'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
           $font-weight-base: $font-weight-light;
           // same hue as the color theme but darker (avoid black!):
-          $body-color: hsl(243, 100%, 15%);
+          $body-color: hsl(243, 100%, 12%);
           $body-bg: $light;
 
           @import 'node_modules/bootstrap/scss/bootstrap.scss';
@@ -127,7 +131,7 @@ export default function Layout({ children, page }) {
           h6 {
             font-family: 'Montserrat', sans-serif;
             color: $primary;
-          };
+          }
 
           .white-space {
             &-top {
@@ -136,18 +140,17 @@ export default function Layout({ children, page }) {
             &-bottom {
               margin-bottom: 7rem; // error
             }
-          };
+          }
 
           .btn-primary {
             @include button-variant($primary, $primary, $light);
-            font-weight: 700;
-          };
+            font-weight: 600;
+          }
 
           .btn-outline-primary {
             @include button-outline-variant($primary);
             font-weight: 700;
-          };
-
+          }
         `}
       </style>
     </>

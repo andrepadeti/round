@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="fix-scroll" id="hero">
       <div className="row flex-md-nowrap justify-content-center align-items-center p-3">
         <div className="col-12 col-md-6 py-5 text-center text-md-start">
-          <h2>Desenvolva seu potencial.</h2>
+          <h1>Desenvolva seu potencial.</h1>
           <p>
             Venha estudar inglês com quem tem mais de 20 anos de experiência
             formando alunos para o mercado.
@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
       <style jsx>
         {`
-          h2 {
+          h1 {
             font-weight: 900;
           }
 

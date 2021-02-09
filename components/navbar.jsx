@@ -2,11 +2,13 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false)
+  const togglerRef = useRef(null)
 
   return (
     <>
@@ -22,7 +24,7 @@ const Navigation = () => {
       >
         <div className="container">
           <Link href="/">
-            <a className="d-flex navbar-brand">
+            <a className="d-flex navbar-brand logo">
               <Image
                 src="/images/bare-logo-transparent.png"
                 alt="logo"
@@ -30,10 +32,15 @@ const Navigation = () => {
                 height={30}
                 layout="fixed"
               />
-              <span className="ms-1 logo">Round English</span>
+              <span className="ms-1">Round English</span>
             </a>
           </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            ref={togglerRef}
+            onClick={() => togglerRef.current.blur()}
+          >
+            <FontAwesomeIcon icon={['fa', `${expanded ? 'times' : 'bars'}`]} />
+          </Navbar.Toggle>
           <Navbar.Collapse>
             <Nav className="ms-auto">
               <Link href="/#hero" passHref>
@@ -98,7 +105,7 @@ const Navigation = () => {
 
           .logo {
             font-weight: 800;
-            color: inherit;
+            color: hsl(243, 100%, 10%);
           }
         `}
       </style>

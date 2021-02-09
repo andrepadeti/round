@@ -5,6 +5,7 @@ import CourseDetails from '../../components/course-details'
 const Presentations = () => {
   const title = 'Presentations/ Negotiations'
   const image = 'presentations'
+  const alt = 'Cursos oferecidos. Curso de inglês para Business Presentations e Business Negotiations.'
   const body = [
     'É cada vez mais comum que as apresentações corporativas, videoconferências e negociações sejam em inglês.',
     'Você não pode perder a oportunidade de se destacar nesses eventos por não estar preparado para usar seu inglês nesses contextos.',
@@ -16,9 +17,9 @@ const Presentations = () => {
   return (
     <Layout page="presentations">
       <Head>
-        <title>{siteTitle}</title>
+        <title>{`${siteTitle} - Cursos - ${title}`}</title>
       </Head>
-      <CourseDetails title={title} image={image} body={body} button={button} />
+      <CourseDetails title={title} image={image} alt={alt} body={body} button={button} />
     </Layout>
   )
 }
