@@ -15,7 +15,7 @@ const ContactModal = () => {
       <div className="d-flex flex-column align-items-center p-3">
         <div className="d-flex align-items-center mb-3">
           <Image
-            src="/images/bare-logo.png"
+            src="/images/bare-logo-transparent.png"
             alt="logo"
             width={20}
             height={20}
@@ -59,4 +59,3 @@ const ContactModal = () => {
 }
 
 export default ContactModal
-

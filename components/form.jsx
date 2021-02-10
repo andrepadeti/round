@@ -55,10 +55,10 @@ const ContactForm = () => {
               .max(20, 'Tamanho máximo: 20 caracteres')
               .required('Campo obrigatório.'),
             email: Yup.string()
-              // .matches(
-              //   /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-              //   'Endereço de email inválido.'
-              // )
+              .matches(
+                /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                'Endereço de email inválido.'
+              )
               .required('Campo obrigatório.'),
             message: Yup.string()
               .min(15, 'Tamanho mínimo: 15 caracteres')

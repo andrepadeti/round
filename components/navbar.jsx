@@ -89,7 +89,7 @@ const Navigation = () => {
             // color: #6c63ff !important;
           }
 
-          container {
+          .container {
             background-color: inherit;
           }
 

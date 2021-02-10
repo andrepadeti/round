@@ -1,16 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Card = ({ title, text, link, image }) => {
+const Card = ({ title, text, link, image, alt }) => {
   return (
     <div className="card bg-lighter mb-3 p-4 m-auto">
       <div className="row">
         <div className="col-md-4 text-center">
           <Image
             src={`/images/${image}.svg`}
+            alt={alt}
             layout="intrinsic"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             className="card-img-top"
           />
         </div>

@@ -24,9 +24,17 @@ import {
   faBuilding,
   faPhone,
   faBars,
-  faTimes
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons'
-library.add(faHeartBroken, faEnvelope, faBuilding, faPhone, faBars, faTimes, fab)
+library.add(
+  faHeartBroken,
+  faEnvelope,
+  faBuilding,
+  faPhone,
+  faBars,
+  faTimes,
+  fab
+)
 // end font awesome initialization
 
 const name = 'PadetiIT'
@@ -40,10 +48,19 @@ export default function Layout({ children, page }) {
         <link rel="icon" href="/favicon.ico" />
         {/* Essential META Tags */}
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name='viewport' content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <meta property="og:title" content="Round English" />
-        <meta property="og:description" content="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge." />
-        <meta property="og:image" content="https://roundenglish.com.br/_next/image?url=%2Fimages%2Fhero.svg&w=1920&q=75" />
+        <meta
+          property="og:description"
+          content="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge."
+        />
+        <meta
+          property="og:image"
+          content="https://roundenglish.com.br/_next/image?url=%2Fimages%2Fhero.svg&w=1920&q=75"
+        />
         <meta property="og:url" content="https://roundenglish.com.br/" />
         <meta name="twitter:card" content="summary_large_image" />
         {/* Non-Essential, But Recommended */}
@@ -73,17 +90,21 @@ export default function Layout({ children, page }) {
           $info: hsl(240, 33%, 25%);
           $warning: hsl(28, 60%, 55%);
           $danger: hsl(4, 90%, 58%);
-          $lighter: hsl(51, 21%, 96%);
           $light: hsl(51, 21%, 94%);
           $dark: hsl(240, 33%, 25%);
-
-          $custom-colors: (
-            'lighter': $lighter,
-          );
 
           @import 'node_modules/bootstrap/scss/functions';
           @import 'node_modules/bootstrap/scss/variables';
           @import 'node_modules/bootstrap/scss/mixins';
+
+          // $lighter: hsl(51, 21%, 96%);
+          $darker: hsla(51, 21%, 94%, 0.663);
+
+          $custom-colors: (
+            'lighter': hsl(51, 21%, 96%),
+            'darker': hsla(51, 21%, 94%, 0.663),
+            'red': red
+          );
 
           $spacers: (
             0: 0,
@@ -150,6 +171,11 @@ export default function Layout({ children, page }) {
           .btn-outline-primary {
             @include button-outline-variant($primary);
             font-weight: 700;
+          }
+
+          .container-small {
+            @include make-container();
+            max-width: 600px;
           }
         `}
       </style>

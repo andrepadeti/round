@@ -8,13 +8,14 @@ $light: hsl(51, 21%, 94%);
 $darker: hsla(51, 21%, 94%, 0.663);
 $dark: hsl(240, 33%, 25%);
 
-$custom-colors: (
-  'darker': $darker,
-);
 
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';
 @import 'node_modules/bootstrap/scss/mixins';
+
+$custom-colors: (
+  'darker': $darker,
+);
 
 $spacers: (
   0: 0,

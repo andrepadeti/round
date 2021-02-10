@@ -20,24 +20,28 @@ const Cursos = () => {
         text="Aulas comunicativas para quem precisa melhorar o inglês para os mais variados fins."
         link="/cursos/cursos-regulares"
         image="general"
+        alt="Cursos oferecidos. Cursos de inglês regulares. Aprenda inglês para usar no dia a dia, em viagens internacionais, para assistir filmes e para acessar a internet."
       />
       <Card
         title="Propósitos Específicos"
-        text="Este curso é para quem precisa aprender a tratar de assuntos como: TI • Bancos • Logística • Contabilidade e outros temas."
+        text="Este curso é para quem precisa aprender a falar de assuntos como: TI • Bancos • Logística • Contabilidade e outros temas."
         link="/cursos/propositos-especificos"
         image="esp"
+        alt="Cursos oferecidos. Inglês para propósitos específicos. TI, bancos, logística, contabilidade e outros temas específicos."
       />
       <Card
         title="Exames Internacionais"
         text="Para você se preparar para exames internacionais: TOEFL • IELTS • FCE • CAE • CPE."
         link="/cursos/exames"
         image="exams"
+        alt="Cursos oferecidos. Cursos de inglês preparatórioa para exames internacioanis. FCE, CAE, CPE, TOELF, IELTS."
       />
       <Card
         title="Presentations / Business Negotiations"
         text="Se você precisa fazer apresentações e negociações em inglês, este é um curso focado no vocabulário e expressões específicos para esses fins."
         link="/cursos/presentations"
         image="presentations"
+        alt="Cursos oferecidos. Curso de inglês para Business Presentations e Business Negotiations."
       />
     </>
   )
