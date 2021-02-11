@@ -1,15 +1,14 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import SEO, { meta } from '../components/SEO'
+import Layout from '../components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SectionTitle from '../components/sectionTitle'
 import Link from 'next/link'
 
 export default function Page404() {
+  const localMeta = { ...meta, title: 'Round English - Página não encontrada' }
   return (
     <Layout>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+      <SEO meta={localMeta} />
       <div className="container">
         <div className="row mb-6">
           <div className="col-12 col-md-8 m-auto text-center">

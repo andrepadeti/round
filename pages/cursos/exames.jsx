@@ -1,12 +1,23 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../../components/layout'
+import SEO, { meta } from '../../components/SEO'
+import Layout from '../../components/layout'
 import CourseDetails from '../../components/course-details'
 
 const Exames = () => {
+  // meta tags
+  const localMeta = {
+    ...meta,
+    title: 'Round English - Cursos - Exames Internacionais',
+    description:
+      'Curso de inglês preparatório para exames internacioanis. FCE, CAE, CPE, TOELF, IELTS.',
+    image: '/images/exams.svg',
+    url: 'www.roundenglish.com.br/cursos/exames',
+  }
+
+  // CourseDetails component variables
   const title = 'Exames Internacionais'
   const image = 'exams'
   const alt =
-    'Cursos oferecidos. Cursos de inglês preparatórioa para exames internacioanis. FCE, CAE, CPE, TOELF, IELTS.'
+    'Cursos oferecidos. Curso de inglês preparatório para exames internacioanis. FCE, CAE, CPE, TOELF, IELTS.'
   const body = [
     'Muitas empresas e boa parte das universidades exigem que você comprove o seu nível de inglês. Essa comprovação se dá através de exames internacionais como TOEFL, IETLS, CAE e CPE.',
     'Se você vai fazer pós-graduação em uma universidade no exterior, por exemplo, certamente lhe vai ser cobrado um exame internacional. Você não pode perder a chance de fazer uma pós-graduação no exterior por não ter um certificado internacional.',
@@ -17,9 +28,7 @@ const Exames = () => {
 
   return (
     <Layout page="exams">
-      <Head>
-        <title>{`${siteTitle} - Cursos - ${title}`}</title>
-      </Head>
+      <SEO meta={localMeta} />
       <CourseDetails
         title={title}
         image={image}

@@ -37,39 +37,12 @@ library.add(
 )
 // end font awesome initialization
 
-const name = 'PadetiIT'
-export const siteTitle = 'Round English'
+
 
 export default function Layout({ children, page }) {
   const [modal, setModal] = useState({ show: false, message: [] })
   return (
     <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        {/* Essential META Tags */}
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
-        <meta property="og:title" content="Round English" />
-        <meta
-          property="og:description"
-          content="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge."
-        />
-        <meta
-          property="og:image"
-          content="https://roundenglish.com.br/_next/image?url=%2Fimages%2Fhero.svg&w=1920&q=75"
-        />
-        <meta property="og:url" content="https://roundenglish.com.br/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        {/* Non-Essential, But Recommended */}
-        <meta property="og:site_name" content="Round English" />
-        <meta name="twitter:image:alt" content="Round English" />
-        {/* Non-Essential, But Required for Analytics */}
-        <meta property="fb:app_id" content="your_app_id" />
-        <meta name="twitter:site" content="@RoundEnglish" />
-      </Head>
       <Context.Provider value={{ modal, setModal }}>
         <ContactModal />
         <Navigation />
