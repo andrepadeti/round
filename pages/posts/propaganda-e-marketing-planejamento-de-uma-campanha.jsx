@@ -12,7 +12,7 @@ const Regular = () => {
       'Round English - Exercícios - Propaganda e Marketing - Planejamento de uma campanha',
     description:
       'O processo de geração e execução da propaganda obedece a uma ordem sequencial, ou seja, ocorre em várias etapas até que a informação chegue ao consumidor final e este efetivamente compre o produto anunciado. Quais são essas etapas? Em que ordem elas ocorrem?',
-    image: '/images/blog/marketing.svg',
+    image: '/images/blog/marketing.jpg',
     url: 'www.roundenglish.com.br/posts/propaganda-e-marketing-planejamento-de-uma-campanha',
   }
 

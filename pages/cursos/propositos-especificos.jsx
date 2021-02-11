@@ -9,7 +9,7 @@ const Regular = () => {
     title: 'Round English - Cursos - Propósitos Específicos',
     description:
       'Inglês para propósitos específicos. TI, bancos, logística, contabilidade e outros temas específicos.',
-    image: '/images/esp.svg',
+    image: '/images/esp.jpg',
     url: 'www.roundenglish.com.br/cursos/propositos-especificos',
   }
 

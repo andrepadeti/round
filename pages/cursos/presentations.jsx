@@ -9,7 +9,7 @@ const Presentations = () => {
     title: 'Round English - Cursos - Presentations/ Negotiations',
     description:
       'Curso de inglês para Business Presentations e Business Negotiations.',
-    image: '/images/presentations.svg',
+    image: '/images/presentations.jpg',
     url: 'www.roundenglish.com.br/cursos/presentations',
   }
 

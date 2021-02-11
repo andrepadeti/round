@@ -4,7 +4,7 @@ export const meta = {
   title: 'Round English',
   description:
     'Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge.',
-  image: '/images/hero.svg',
+  image: '/images/hero.jpg',
   url: 'https://roundenglish.com.br',
   siteName: 'Round English',
   twCard: 'summary_large_image',

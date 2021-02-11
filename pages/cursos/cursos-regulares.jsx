@@ -9,7 +9,7 @@ const Regular = () => {
     title: 'Round English - Cursos - Cursos Regulares',
     description:
       'Cursos regulares de inglês. Aprenda inglês para usar no dia a dia, em viagens internacionais, para assistir filmes e para acessar a internet.',
-    image: '/images/general.svg',
+    image: '/images/general.jpg',
     url: 'www.roundenglish.com.br/cursos/cursos-regulares',
   }
 

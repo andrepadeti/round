@@ -9,7 +9,7 @@ const Exames = () => {
     title: 'Round English - Cursos - Exames Internacionais',
     description:
       'Curso de inglês preparatório para exames internacioanis. FCE, CAE, CPE, TOELF, IELTS.',
-    image: '/images/exams.svg',
+    image: '/images/exams.jpg',
     url: 'www.roundenglish.com.br/cursos/exames',
   }
 
