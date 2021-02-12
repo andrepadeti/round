@@ -1,34 +1,40 @@
-import SEO, { meta } from '../../components/SEO'
-import Layout from '../../components/layout'
-import Banner from '../../components/exercicios/banner'
-import Answers from '../../components/exercicios/show-answers'
-import Advertisement from '../../components/exercicios/advertisement'
+import { useRouter } from 'next/router'
+import global from 'src/global'
+import SEO, { meta } from 'components/SEO'
+import Layout from 'components/layout'
+import Banner from 'components/exercicios/banner'
+import Answers from 'components/exercicios/show-answers'
+import Advertisement from 'components/exercicios/advertisement'
 
 const Exercicio = () => {
+  const router = useRouter()
+  // component variables
+  const title = 'Proposta e Contraproposta'
+  const section = global.exercicios.section.negotiating
+  const image = global.exercicios.banner.image.fileName.negotiating
+  const alt = global.exercicios.banner.image.alt.esp
+  const button = global.exercicios.button
+
   // meta tags
   const localMeta = {
     ...meta,
-    title: 'English for Negotiating - Proposta e Contraproposta',
+    title: `${section} - ${title}`,
     description:
-      'Você foi chamado para analisar a situação do TI de uma eChegou o momento da reunião com o seu parceiro de negócios, e ambos vão tentar chegar a um acordo que seja bom para todos. Nesse momento é importante usar uma linguagem seja respeitosa com o outro lado...',
-    image: '/images/exercicios/negotiating.jpg',
-    url:
-      'www.roundenglish.com.br/exercicios/negotiating-proposta-e-contraproposta',
+      'Chegou o momento da reunião com o seu parceiro de negócios, e ambos vão tentar chegar a um acordo que seja bom para todos. Nesse momento é importante usar uma linguagem seja respeitosa com o outro lado...',
+    image: `/images/exercicios/${image}.jpg`,
+    url: `${global.url}${router.pathname}`,
   }
-
-  // Banner/Advertisement component variables
-  const title = 'Proposta e Contraproposta'
-  const section = 'English for Negotiating'
-  const image = 'negotiating.svg'
-  const alt =
-    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (
     <Layout page="exercicios">
       <SEO meta={localMeta} />
       <div className="container">
-        <Banner title={title} section={section} image={image} alt={alt} />
+        <Banner
+          title={title}
+          section={section}
+          image={`${image}.svg`}
+          alt={alt}
+        />
         <div className="container-small">
           <div className="row row-cols-12">
             <p>
@@ -153,7 +159,7 @@ const Exercicio = () => {
                 </li>
               </ol>
             </Answers>
-            <Advertisement course={section} />
+            <Advertisement course={section} button={button} />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Fade from 'react-reveal/Fade'
 
 const Answers = ({ children }) => {
@@ -6,7 +6,10 @@ const Answers = ({ children }) => {
   // in case I need to use the same component again on the same page,
   // create a random id for the checkbox so that I don't end up having one
   // checkbox messing up with another
-  const id = Math.random().toString()
+  const [id, setId] = useState()
+  useEffect(() => {
+    setId(Math.random().toString())
+  }, [])
 
   return (
     <div className="row">

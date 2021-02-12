@@ -1,34 +1,40 @@
-import SEO, { meta } from '../../components/SEO'
-import Layout from '../../components/layout'
-import Banner from '../../components/exercicios/banner'
-import Answers from '../../components/exercicios/show-answers'
-import Advertisement from '../../components/exercicios/advertisement'
+import { useRouter } from 'next/router'
+import global from 'src/global'
+import SEO, { meta } from 'components/SEO'
+import Layout from 'components/layout'
+import Banner from 'components/exercicios/banner'
+import Answers from 'components/exercicios/show-answers'
+import Advertisement from 'components/exercicios/advertisement'
 
 const Exercicio = () => {
+  const router = useRouter()
+  // component variables
+  const title = 'Formal and informal language - part 2'
+  const section = global.exercicios.section.email
+  const image = global.exercicios.banner.image.fileName.email
+  const alt = global.exercicios.banner.image.alt.esp
+  const button = global.exercicios.button
+
   // meta tags
   const localMeta = {
     ...meta,
-    title: 'Email English - Formal and Informal Language - Parte 2',
+    title: `${section} - ${title}`,
     description:
       'Hoje eu quero voltar ao assunto de linguagem formal e informal. É muito importante escrever suas mensagens de email no registro correto para cada situação.',
-    image: '/images/exercicios/email.jpg',
-    url:
-      'www.roundenglish.com.br/exercicios/email-english-formal-and-informal-language-part-2',
+    image: `/images/exercicios/${image}.jpg`,
+    url: `${global.url}${router.pathname}`,
   }
-
-  // Banner/Advertisement component variables
-  const title = 'Formal and Informal Language'
-  const section = 'Email English'
-  const image = 'email.svg'
-  const alt =
-    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (
     <Layout page="exercicios">
       <SEO meta={localMeta} />
       <div className="container">
-        <Banner title={title} section={section} image={image} alt={alt} />
+        <Banner
+          title={title}
+          section={section}
+          image={`${image}.svg`}
+          alt={alt}
+        />
         <div className="container-small">
           <div className="row row-cols-12">
             <p>
@@ -127,7 +133,7 @@ const Exercicio = () => {
               <h4>Answers</h4>
               <p>1b; 2f; 3j; 4h; 5c; 6e; 7g; 8a; 9i; 10d</p>
             </Answers>
-            <Advertisement course={section} />
+            <Advertisement course={section} button={button} />
           </div>
         </div>
       </div>

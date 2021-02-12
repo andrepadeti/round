@@ -1,34 +1,40 @@
-import SEO, { meta } from '../../components/SEO'
-import Layout from '../../components/layout'
-import Banner from '../../components/exercicios/banner'
-import Answers from '../../components/exercicios/show-answers'
-import Advertisement from '../../components/exercicios/advertisement'
+import { useRouter } from 'next/router'
+import global from 'src/global'
+import SEO, { meta } from 'components/SEO'
+import Layout from 'components/layout'
+import Banner from 'components/exercicios/banner'
+import Answers from 'components/exercicios/show-answers'
+import Advertisement from 'components/exercicios/advertisement'
 
 const Exercicio = () => {
+  const router = useRouter()
+  // component variables
+  const title = 'Números aproximados'
+  const section = global.exercicios.section.presentations
+  const image = global.exercicios.banner.image.fileName.presentations
+  const alt = global.exercicios.banner.image.alt.esp
+  const button = global.exercicios.button
+
   // meta tags
   const localMeta = {
     ...meta,
-    title: 'Apresentações Corporativas - Números aproximados',
+    title: `${section} - ${title}`,
     description:
       'Uma das estratégias que utilizamos em uma apresentação corporativa é a de mostrar alguns resultados obtidos pela empresa ao longo do tempo. Porém nem sempre é necessário ou desejável dar números exatos.',
-    image: '/images/exercicios/presentations.jpg',
-    url:
-      'www.roundenglish.com.br/exercicios/apresentacoes-corporativas-numeros-aproximados',
+    image: `/images/exercicios/${image}.jpg`,
+    url: `${global.url}${router.pathname}`,
   }
-
-  // Banner/Advertisement component variables
-  const title = 'Números aproximados'
-  const section = 'Apresentações Corporativas'
-  const image = 'presentations.svg'
-  const alt =
-    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (
     <Layout page="exercicios">
       <SEO meta={localMeta} />
       <div className="container">
-        <Banner title={title} section={section} image={image} alt={alt} />
+        <Banner
+          title={title}
+          section={section}
+          image={`${image}.svg`}
+          alt={alt}
+        />
         <div className="container-small">
           <div className="row row-cols-12">
             <p>
@@ -118,7 +124,7 @@ const Exercicio = () => {
                 <li>approximately/roughly 400 square metres</li>
               </ol>
             </Answers>
-            <Advertisement course={section} />
+            <Advertisement course={section} button={button} />
           </div>
         </div>
       </div>

@@ -1,34 +1,40 @@
-import SEO, { meta } from '../../components/SEO'
-import Layout from '../../components/layout'
-import Banner from '../../components/exercicios/banner'
-import Answers from '../../components/exercicios/show-answers'
-import Advertisement from '../../components/exercicios/advertisement'
+import { useRouter } from 'next/router'
+import global from 'src/global'
+import SEO, { meta } from 'components/SEO'
+import Layout from 'components/layout'
+import Banner from 'components/exercicios/banner'
+import Answers from 'components/exercicios/show-answers'
+import Advertisement from 'components/exercicios/advertisement'
 
 const Exercicio = () => {
+  const router = useRouter()
+  // component variables
+  const title = 'Planejamento de uma campanha'
+  const section = global.exercicios.section.marketing
+  const image = global.exercicios.banner.image.fileName.marketing
+  const alt = global.exercicios.banner.image.alt.esp
+  const button = global.exercicios.button
+
   // meta tags
   const localMeta = {
     ...meta,
-    title: 'Propaganda e Marketing - Planejamento de uma campanha',
+    title: `${section} - ${title}`,
     description:
       'O processo de geração e execução da propaganda obedece a uma ordem sequencial, ou seja, ocorre em várias etapas até que a informação chegue ao consumidor final e este efetivamente compre o produto anunciado. Quais são essas etapas? Em que ordem elas ocorrem?',
-    image: '/images/exercicios/marketing.jpg',
-    url:
-      'www.roundenglish.com.br/exercicios/propaganda-e-marketing-planejamento-de-uma-campanha',
+    image: `/images/exercicios/${image}.jpg`,
+    url: `${global.url}${router.pathname}`,
   }
-
-  // Banner/Advertisement component variables
-  const title = 'Planejamento de uma campanha'
-  const section = 'Propaganda e Marketing'
-  const image = 'marketing.svg'
-  const alt =
-    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (
     <Layout page="exercicios">
       <SEO meta={localMeta} />
       <div className="container">
-        <Banner title={title} section={section} image={image} alt={alt} />
+        <Banner
+          title={title}
+          section={section}
+          image={`${image}.svg`}
+          alt={alt}
+        />
         <div className="container-small">
           <div className="row row-cols-12">
             <p>
@@ -74,7 +80,7 @@ const Exercicio = () => {
             <h4>Answer</h4>
             <p>(suggested answers) 1e; 2g; 3f; 4d; 5c; 6b; 7h; 8a</p>
           </Answers>
-          <Advertisement course={section} />
+          <Advertisement course={section} button={button} />
         </div>
       </div>
       <style jsx>
