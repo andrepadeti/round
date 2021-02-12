@@ -21,7 +21,7 @@ const Exercicio = () => {
   const section = 'Propaganda e Marketing'
   const image = 'marketing.svg'
   const alt =
-    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, contabilidade e outros temas específicos.'
+    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
   const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
 
   return (

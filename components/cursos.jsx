@@ -27,7 +27,7 @@ const Cursos = () => {
         text="Este curso é para quem precisa aprender a falar de assuntos como: TI • Propaganda e Marketing • Logística • Contabilidade e outros temas."
         link="/cursos/propositos-especificos"
         image="esp"
-        alt="Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, contabilidade e outros temas específicos."
+        alt="Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos."
       />
       <Card
         title="Exames Internacionais"

@@ -31,7 +31,10 @@ const Navigation = () => {
                 height={30}
                 layout="fixed"
               />
-              <span className="ms-1 fs-4">Round English</span>
+              <div>
+                <span className="ms-1 fs-4">R</span>
+                <span className="fs-5">OUND</span>
+              </div>
             </a>
           </Link>
           <Navbar.Toggle
@@ -101,12 +104,6 @@ const Navigation = () => {
 
           .nav-link:hover {
             color: #2b2b55 !important;
-          }
-
-          .logo {
-            font-family: 'Alegreya Sans', sans-serif;
-            font-weight: 800;
-            color: hsl(243, 100%, 10%);
           }
         `}
       </style>

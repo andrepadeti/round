@@ -62,9 +62,16 @@ const IndexOfExercises = () => {
                 Soluções em TI
               </button>
             </Link>
+            <h6 className="mt-5 mb-3">English for Negotiating</h6>
+            <Link href="/exercicios/negotiating-proposta-e-contraproposta">
+              <button className="btn btn-outline-primary">
+                Proposta e Contraproposta
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+      
       <style jsx>
         {`
           h1 {

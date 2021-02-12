@@ -17,11 +17,14 @@ const ContactModal = () => {
           <Image
             src="/images/bare-logo-transparent.png"
             alt="logo"
-            width={20}
-            height={20}
+            width={28}
+            height={28}
             layout="fixed"
           />
-          <span className="ms-1 logo">Round English</span>
+          <div className='logo'>
+            <span className="ms-1 fs-5">R</span>
+            <span className="fs-6">OUND</span>
+          </div>
         </div>
         <div className="mb-2">
           <p className="text-center">
