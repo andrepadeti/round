@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false)
@@ -32,7 +31,7 @@ const Navigation = () => {
                 height={30}
                 layout="fixed"
               />
-              <span className="ms-1">Round English</span>
+              <span className="ms-1 fs-4">Round English</span>
             </a>
           </Link>
           <Navbar.Toggle
@@ -50,12 +49,6 @@ const Navigation = () => {
                   </span>
                 </Nav.Link>
               </Link>
-              {/* <NavDropdown title='Cursos' id='cursos' className='cursos'>
-                <NavDropdown.Item>Regulares</NavDropdown.Item>
-                <NavDropdown.Item>Propósitos Específicos</NavDropdown.Item>
-                <NavDropdown.Item>Exames Internacionais</NavDropdown.Item>
-                <NavDropdown.Item>Presentations/Negotiations</NavDropdown.Item>
-              </NavDropdown> */}
               <Link href="/#cursos" passHref>
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
@@ -74,6 +67,13 @@ const Navigation = () => {
                 <Nav.Link>
                   <span className="nav-link" onClick={() => setExpanded(false)}>
                     Contato
+                  </span>
+                </Nav.Link>
+              </Link>
+              <Link href="/exercicios" passHref>
+                <Nav.Link>
+                  <span className="nav-link" onClick={() => setExpanded(false)}>
+                    Exercícios
                   </span>
                 </Nav.Link>
               </Link>
@@ -104,6 +104,7 @@ const Navigation = () => {
           }
 
           .logo {
+            font-family: 'Alegreya Sans', sans-serif;
             font-weight: 800;
             color: hsl(243, 100%, 10%);
           }

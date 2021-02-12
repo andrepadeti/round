@@ -5,7 +5,7 @@ import SectionTitle from '../components/sectionTitle'
 import Link from 'next/link'
 
 export default function Page404() {
-  const localMeta = { ...meta, title: 'Round English - Página não encontrada' }
+  const localMeta = { ...meta, title: 'Round English - Página não encontrada', noIndex: true }
   return (
     <Layout>
       <SEO meta={localMeta} />

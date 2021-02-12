@@ -14,7 +14,7 @@ const Hero = () => {
           <Link href="/#contato">
             <button
               type="button"
-              className="btn btn-primary text-light btn-lg shadow"
+              className="btn btn-primary btn-lg shadow"
             >
               Agende uma entrevista
             </button>

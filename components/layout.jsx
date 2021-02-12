@@ -37,8 +37,6 @@ library.add(
 )
 // end font awesome initialization
 
-
-
 export default function Layout({ children, page }) {
   const [modal, setModal] = useState({ show: false, message: [] })
   return (
@@ -52,8 +50,8 @@ export default function Layout({ children, page }) {
       <style jsx global>
         {`
           /* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&family=Alegreya:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); */
-          /* @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+          /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
           /* begin bootstrap */
@@ -76,7 +74,6 @@ export default function Layout({ children, page }) {
           $custom-colors: (
             'lighter': hsl(51, 21%, 96%),
             'darker': hsla(51, 21%, 94%, 0.663),
-            'red': red
           );
 
           $spacers: (
@@ -103,7 +100,6 @@ export default function Layout({ children, page }) {
           );
 
           $font-family-sans-serif: 'Inter', sans-serif, system-ui;
-          /* $font-family-sans-serif:      'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
           $font-weight-base: $font-weight-light;
           // same hue as the color theme but darker (avoid black!):
           $body-color: hsl(243, 100%, 12%);
@@ -137,13 +133,22 @@ export default function Layout({ children, page }) {
           }
 
           .btn-primary {
-            @include button-variant($primary, $primary, $light);
+            @include button-variant(
+              $background: $primary,
+              $border: $primary,
+              $color: $light,
+              $hover-color: $light
+            );
             font-weight: 600;
           }
 
           .btn-outline-primary {
-            @include button-outline-variant($primary);
-            font-weight: 700;
+            @include button-outline-variant(
+              $color: $primary,
+              $color-hover: $light,
+              $active-color: $light
+            );
+            font-weight: 600;
           }
 
           .container-small {

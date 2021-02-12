@@ -11,11 +11,20 @@ export const meta = {
   twSite: '@RoundEnglish',
   twImageAlt: 'Round English',
   fbAppId: '474625173557832',
+  noIndex: false,
+  noFollow: false,
 }
 
 const SEO = ({ meta }) => {
   return (
     <Head>
+      <meta
+        name="robots"
+        content={`${meta.noIndex ? 'noindex' : 'index'},${
+          meta.noFollow ? 'nofollow' : 'follow'
+        }`}
+      />
+
       <link rel="icon" href="/favicon.ico" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta
@@ -29,7 +38,12 @@ const SEO = ({ meta }) => {
         content={meta.description}
         key="ogdescription"
       />
-      <meta property="og:image" content={`https://roundenglish.com.br${meta.image}`} key="ogimage" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:image"
+        content={`https://roundenglish.com.br${meta.image}`}
+        key="ogimage"
+      />
       <meta property="og:url" content={meta.url} key="ogurl" />
       <meta property="og:site_name" content={meta.siteName} key="ogsitename" />
       <meta name="twitter:card" content={meta.twCard} key="twcard" />
