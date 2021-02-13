@@ -36,7 +36,7 @@ const IndexOfExercises = () => {
         </div>
         <div className="row mb-6">
           <div className="col-12 col-md-8 m-auto d-flex flex-column align-items-center justify-content-center">
-            <p className="mb-5">
+            <p className="mb-5 text-center">
               Uma coleção de exercícios para você já ir começando a praticar o
               seu inglês.
             </p>
