@@ -31,63 +31,92 @@ export default global = {
   },
 }
 
-const exercises = {
+export const exercises = {
   section: {
-    presentations: [
-      {
-        title: 'Números aproximados',
-        url: 'apresentacoes-corporativas-numeros-aproximados',
-      },
-      {
-        title: 'Slides',
-        url: 'apresentacoes-corporativas-slides',
-      },
-    ],
-    email: [
-      {
-        title: 'Formal and informal language - Part 2',
-        url: 'email-english-formal-and-informal-language-part-2',
-      },
-      {
-        title: 'Formal and informal language',
-        url: 'email-english-formal-and-informal-language',
-      },
-    ],
-    negotiating: [
-      {
-        title: 'Proposta e contraproposta',
-        url: 'negotiating-proposta-e-contraproposta',
-      },
-      {
-        title: 'Marcando a primeira reunião',
-        url: 'negotiating-marcando-a-aprimeira-reuniao',
-      },
-    ],
-    marketing: [
-      {
-        title: 'Planejamento de uma campanha',
-        url: 'propaganda-e-marketing-planejamento-de-uma-campanha',
-      },
-      {
-        title: 'Estratégia de precificação',
-        url: 'propaganda-e-marketing-estrategias-de-precificacao',
-      },
-    ],
-    it: [
-      {
-        title: 'Soluções em TI',
-        url: 'ti-solucoes-em-ti',
-      },
-      {
-        title: 'Convergência Tecnológica',
-        url: 'ti-convergencia-tecnologica',
-      },
-    ],
-    sales_purchasing: [
-      {
-        title: 'Escuta ativa',
-        url: 'compras-e-vendas-escuta-ativa',
-      },
-    ],
+    presentations: {
+      chosen: false,
+      items: [
+        {
+          title: 'Números aproximados',
+          url: 'apresentacoes-corporativas-numeros-aproximados',
+          chosen: false,
+        },
+        {
+          title: 'Slides',
+          url: 'apresentacoes-corporativas-slides',
+          chosen: false,
+        },
+      ],
+    },
+    email: {
+      chosen: false,
+      items: [
+        {
+          title: 'Formal and informal language - Part 2',
+          url: 'email-english-formal-and-informal-language-part-2',
+          chosen: false,
+        },
+        {
+          title: 'Formal and informal language',
+          url: 'email-english-formal-and-informal-language',
+          chosen: false,
+        },
+      ],
+    },
+    negotiating: {
+      chosen: false,
+      items: [
+        {
+          title: 'Proposta e contraproposta',
+          url: 'negotiating-proposta-e-contraproposta',
+          chosen: false,
+        },
+        {
+          title: 'Marcando a primeira reunião',
+          url: 'negotiating-marcando-a-aprimeira-reuniao',
+          chosen: false,
+        },
+      ],
+    },
+    marketing: {
+      chosen: false,
+      items: [
+        {
+          title: 'Planejamento de uma campanha',
+          url: 'propaganda-e-marketing-planejamento-de-uma-campanha',
+          chosen: false,
+        },
+        {
+          title: 'Estratégia de precificação',
+          url: 'propaganda-e-marketing-estrategias-de-precificacao',
+          chosen: false,
+        },
+      ],
+    },
+    it: {
+      chosen: false,
+      items: [
+        {
+          title: 'Soluções em TI',
+          url: 'ti-solucoes-em-ti',
+          chosen: false,
+        },
+        {
+          title: 'Convergência Tecnológica',
+          url: 'ti-convergencia-tecnologica',
+          chosen: false,
+        },
+      ],
+    },
+    sales_purchasing: {
+      chosen: false,
+      items: [
+        {
+          title: 'Escuta ativa',
+          url: 'compras-e-vendas-escuta-ativa',
+          chosen: false,
+        },
+      ],
+    },
   },
 }

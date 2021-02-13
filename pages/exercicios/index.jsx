@@ -3,6 +3,8 @@ import Layout from '../../components/layout'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import global, { exercises } from 'src/global'
+
 const IndexOfExercises = () => {
   // meta tags
   const localMeta = {
@@ -34,44 +36,29 @@ const IndexOfExercises = () => {
         </div>
         <div className="row mb-6">
           <div className="col-12 col-md-8 m-auto d-flex flex-column align-items-center justify-content-center">
-            <p className="fs-5 mb-5">
+            <p className="mb-5">
               Uma coleção de exercícios para você já ir começando a praticar o
               seu inglês.
             </p>
-            <h6 className="mb-3">Propaganda e Marketing</h6>
-            <Link href="/exercicios/propaganda-e-marketing-planejamento-de-uma-campanha">
-              <button className="btn btn-outline-primary">
-                Planejamento de uma campanha
-              </button>
-            </Link>
-            <h6 className="mt-5 mb-3">Apresentações Corporativas</h6>
-            <Link href="/exercicios/apresentacoes-corporativas-numeros-aproximados">
-              <button className="btn btn-outline-primary">
-                Números aproximados
-              </button>
-            </Link>
-            <h6 className="mt-5 mb-3">Email English</h6>
-            <Link href="/exercicios/email-english-formal-and-informal-language-part-2">
-              <button className="btn btn-outline-primary">
-                Formal and informal language
-              </button>
-            </Link>
-            <h6 className="mt-5 mb-3">Inglês para TI</h6>
-            <Link href="/exercicios/ti-solucoes-em-ti">
-              <button className="btn btn-outline-primary">
-                Soluções em TI
-              </button>
-            </Link>
-            <h6 className="mt-5 mb-3">English for Negotiating</h6>
-            <Link href="/exercicios/negotiating-proposta-e-contraproposta">
-              <button className="btn btn-outline-primary">
-                Proposta e Contraproposta
-              </button>
-            </Link>
+
+            {Object.keys(exercises.section).map(section => (
+              <>
+                <h6 className="mt-5 mb-3">
+                  {global.exercicios.section[section]}
+                </h6>
+                {exercises.section[section].items.map(item => (
+                  <Link href={`/exercicios/${item.url}`}>
+                    <button className="btn btn-primary shadow mb-2">
+                      {item.title}
+                    </button>
+                  </Link>
+                ))}
+              </>
+            ))}
           </div>
         </div>
       </div>
-      
+
       <style jsx>
         {`
           h1 {
