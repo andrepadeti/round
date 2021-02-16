@@ -19,21 +19,25 @@ const IndexOfExercises = () => {
   return (
     <Layout page="exercises">
       <SEO meta={localMeta} />
-      <div className="container">
-        <div className="row justify-content-center align-items-center my-5">
-          <div className="col-12 col-md-6 text-center text-md-start">
-            <h1>Exercícios</h1>
-          </div>
-          <div className="col-12 col-md-6">
-            <Image
-              src="/images/exercicios/exercicios.svg"
-              alt="Uma coleção de exercícios para você já ir começando a praticar o seu inglês."
-              width={350}
-              height={350}
-              layout="responsive"
-            />
+      <div className="container-fluid hero">
+        <div className="container-main">
+          <div className="row justify-content-center align-items-center mb-5">
+            <div className="col-12 col-md-6 text-center text-md-start">
+              <h1>Exercícios</h1>
+            </div>
+            <div className="col-12 col-md-6">
+              <Image
+                src="/images/exercicios/exercicios.svg"
+                alt="Uma coleção de exercícios para você já ir começando a praticar o seu inglês."
+                width={350}
+                height={350}
+                layout="responsive"
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="container">
         <div className="row mb-6">
           <div className="col-12 col-md-8 m-auto d-flex flex-column align-items-center justify-content-center">
             <p className="mb-5 text-center">
@@ -41,19 +45,22 @@ const IndexOfExercises = () => {
               seu inglês.
             </p>
 
-            {Object.keys(exercises.section).map(section => (
-              <>
+            {Object.keys(exercises.section).map((section, index) => (
+              <div
+                className="d-flex flex-column align-items-center"
+                key={index}
+              >
                 <h6 className="mt-5 mb-3">
                   {global.exercicios.section[section]}
                 </h6>
-                {exercises.section[section].items.map(item => (
-                  <Link href={`/exercicios/${item.url}`}>
+                {exercises.section[section].items.map((item, index) => (
+                  <Link href={`/exercicios/${item.url}`} key={index}>
                     <button className="btn btn-primary shadow mb-2">
                       {item.title}
                     </button>
                   </Link>
                 ))}
-              </>
+              </div>
             ))}
           </div>
         </div>

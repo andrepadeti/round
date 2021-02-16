@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 import Context from '../context/context'
-import Head from 'next/head'
 import Footer from './footer'
 import Navigation from './navbar'
 import ContactModal from './modal'

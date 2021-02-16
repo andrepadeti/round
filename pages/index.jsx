@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <Layout page="home" theme={'white'}>
       <SEO meta={meta} />
-      <div className="container">
-        <Hero />
+      <Hero />
+      <div className="container-main">
         <Cursos />
         <Profile />
         <Contact />

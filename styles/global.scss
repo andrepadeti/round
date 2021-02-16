@@ -6,8 +6,8 @@
 @import 'custom-bootstrap';
 
 body {
-  max-width: 900px;
-  margin: 0 auto;
+  // max-width: 900px;
+  // margin: 0 auto;
 }
 
 h1,
@@ -58,4 +58,21 @@ h6 {
 .container-small {
   @include make-container();
   max-width: 600px;
+}
+
+.container-main {
+  @include make-container();
+  max-width: 900px;
+}
+
+.hero {
+  background-color: hsl(243, 75%, 85%);
+  background-image: linear-gradient(to top, $hero, $light 60%);
+}
+
+
+@include media-breakpoint-down(sm) {
+  .nav-border {
+    border-bottom: 1px solid hsla(243, 100, 69, 0.2);
+  }
 }

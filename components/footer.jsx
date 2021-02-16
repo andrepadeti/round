@@ -13,13 +13,13 @@ const Footer = () => {
         <div className="col-md-4 col-sm-12 text-center text-md-left pl-md-5">
           <a
             href="https://www.facebook.com/roundenglish"
-            className="me-5 text-light"
+            className="me-5 me-md-6 text-light"
           >
             <FontAwesomeIcon icon={['fab', 'facebook']} size="2x" />
           </a>
           <a
             href="https://www.instagram.com/round.english"
-            className="me-5 text-light"
+            className="me-5 me-md-6 text-light"
           >
             <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
           </a>
@@ -33,12 +33,13 @@ const Footer = () => {
       </div>
 
       <div className="row pt-3 bg-secondary text-light justify-content-center border-bottom">
+        <div className="col-md-2"></div>
         <div className="col-md-4 col-sm-12 ps-5 ps-md-4 mb-4 mb-md-0">
           <h5>Round English</h5>
           <hr style={{ width: '150px' }} />
           <p>Desenvolva seu potencial.</p>
         </div>
-
+        <div className="col-md-2"></div>
         <div className="col-md-4 col-sm-12 ps-5 ps-md-4">
           <h5>Contato</h5>
           <hr style={{ width: '80px' }} />

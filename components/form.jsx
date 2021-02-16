@@ -3,12 +3,9 @@ import Context from '../context/context'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
-const sleep = ms => new Promise(r => setTimeout(r, ms))
-
 const ContactForm = () => {
   let { modal, setModal } = useContext(Context)
 
-  // TODO formspree is validating email better then yup, causing a bug
   const submit = async (values, { setSubmitting, resetForm }) => {
     try {
       const res = await fetch('https://formspree.io/f/myybvnvk', {
@@ -112,11 +109,11 @@ const ContactForm = () => {
                   as="textarea"
                   rows="3"
                   className="form-control"
-                  aria-describedby="messagelHelp"
+                  aria-describedby="messageHelp"
                 />
                 <ErrorMessage
                   component="div"
-                  id="messagelHelp"
+                  id="messageHelp"
                   name="message"
                   className="form-text text-warning"
                 />
@@ -128,14 +125,16 @@ const ContactForm = () => {
               >
                 Enviar
               </button>
-              <button
+              {/* Reset button project put aside until stackoverflow tells me what's wrong */}
+              {/* <button
+                type="button"
                 disabled={isSubmitting}
                 // className="btn btn-light border shadow border-primary text-primary"
                 className="btn btn-outline-primary shadow"
                 onClick={handleReset}
               >
                 Apagar
-              </button>
+              </button> */}
             </Form>
           )}
         </Formik>

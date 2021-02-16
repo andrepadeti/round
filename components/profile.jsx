@@ -9,7 +9,7 @@ const Profile = () => {
         <div className="flex-shrink-1 pe-2">
           <p>Olá,</p>
           <p>
-            Eu sou o André Padeti, professor de inglês há pouco mais de 20 anos.
+            Meu nome é André Padeti e eu sou professor de inglês há {new Date().getFullYear() - 1999} anos.
           </p>
           <p>
             Comecei a lecionar depois de estudar inglês por muitos anos no

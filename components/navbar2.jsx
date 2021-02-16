@@ -13,7 +13,7 @@ const Navigation = () => {
     <>
       <Navbar
         id="navbar"
-        className="bg-light nav-border"
+        className="bg-hero"
         expand="md"
         sticky="top"
         onToggle={() => {
@@ -105,7 +105,6 @@ const Navigation = () => {
           .nav-link:hover {
             color: #2b2b55 !important;
           }
-
         `}
       </style>
     </>
