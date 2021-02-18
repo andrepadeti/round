@@ -6,7 +6,7 @@ const Banner = ({ title, section, image, alt }) => {
     <>
       <div className="row justify-content-center align-items-center my-5">
         <div className="col-12 col-md-6 text-center text-md-start">
-          <h6 className='fs-7 fw-normal'>{section}</h6>
+          <h6 className="fs-7 fw-normal">{section}</h6>
           <h1>{title}</h1>
         </div>
         <div className="col-12 col-md-6">
