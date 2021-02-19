@@ -3,7 +3,16 @@ import Layout from 'components/layout'
 import Banner from 'components/exercicios/banner'
 import Advertisement from 'components/exercicios/advertisement'
 
-const Wrapper = ({ page, meta, title, section, image, alt, button, children }) => {
+const Wrapper = ({
+  page,
+  meta,
+  title,
+  section,
+  image,
+  alt,
+  button,
+  children,
+}) => {
   return (
     <Layout page={page}>
       <SEO meta={meta} />
