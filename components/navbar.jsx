@@ -105,7 +105,6 @@ const Navigation = () => {
           .nav-link:hover {
             color: #2b2b55 !important;
           }
-
         `}
       </style>
     </>

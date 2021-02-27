@@ -68,8 +68,9 @@ h6 {
 .hero {
   background-color: hsl(243, 75%, 85%);
   background-image: linear-gradient(to top, $hero, $light 60%);
+  background: url('/images/hero2.jpg') center 100px / cover no-repeat;
+  
 }
-
 
 @include media-breakpoint-down(sm) {
   .nav-border {
