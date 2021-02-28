@@ -89,11 +89,11 @@ const Navigation = () => {
           .nav-link {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
-            // color: #6c63ff !important;
+            // color: hsl(243, 21%, 94%) !important;
           }
 
           .container {
-            background-color: inherit;
+            // background-color: inherit;
           }
 
           .cursos {

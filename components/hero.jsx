@@ -6,10 +6,11 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className="hero fix-scroll" id="hero">
+    <div className="fix-scroll" id="hero">
       <div className="container-main">
-        <div className="row align-items-center vh-100">
-          <div className="message col-12 col-md-6 py-2 px-4">
+        <Image className="z-index-0" src='/images/hero2.jpg' objectFit='cover' layout='fill'/>
+        <div className="row align-items-center vh-100 z-index-1">
+          <div className="col-12 col-md-6 py-2 px-4 overlay">
             <div>
               <h1>Desenvolva seu potencial.</h1>
               <p>
@@ -34,19 +35,6 @@ const Hero = () => {
 
           p {
             color: hsl(243, 21%, 94%);
-          }
-
-          .bgWrap {
-            position: fixed;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-            z-index: -1;
-          }
-
-          .message {
-            // backdrop-filter: blur(2px);
-            background-color: hsla(243, 100%, 4%, 0.2);
           }
 
           // this is a tweak for the a href scrolling positioning
