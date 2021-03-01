@@ -1,14 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-// TODO: use next/image to make picture smaller to load
-// https://nextjs.org/docs/api-reference/next/image -> background image
-
 const Hero = () => {
   return (
     <div className="fix-scroll" id="hero">
       <div className="container-main">
-        <Image className="z-index-0" src='/images/hero2.jpg' objectFit='cover' layout='fill'/>
+        <Image
+          className="z-index-0"
+          src="/images/hero2.jpg"
+          objectFit="cover"
+          layout="fill"
+          alt="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge."
+        />
         <div className="row align-items-center vh-100 z-index-1">
           <div className="col-12 col-md-6 py-2 px-4 overlay">
             <div>

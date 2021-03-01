@@ -6,7 +6,6 @@ import * as gtag from 'src/gtag'
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
   const isProduction = process.env.NODE_ENV === 'production'
-  console.log('isProduction _app.js: ', isProduction)
 
   useEffect(() => {
     if (isProduction) {

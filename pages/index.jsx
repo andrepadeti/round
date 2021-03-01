@@ -7,7 +7,6 @@ import Profile from '../components/profile'
 
 export default function Home() {
   const isProduction = process.env.NODE_ENV === 'production'
-  console.log('isProduction index.jsx: ', isProduction)
 
   return (
     <Layout page="home" theme={'white'}>

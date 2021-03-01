@@ -5,7 +5,6 @@ class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     const isProduction = process.env.NODE_ENV === 'production'
-    console.log('isProduction _document.js: ', isProduction)
     return { ...initialProps, isProduction }
   }
 
