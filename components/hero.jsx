@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="fix-scroll" id="hero">
       <div className="container-main">
         <Image
-          className="z-index-0"
+          className="z-index-0 clip-path"
           src="/images/hero2.jpg"
           objectFit="cover"
           layout="fill"

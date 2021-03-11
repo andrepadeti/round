@@ -6,15 +6,15 @@ import Layout from '../components/layout'
 import Profile from '../components/profile'
 
 export default function Home() {
-  const isProduction = process.env.NODE_ENV === 'production'
-
   return (
     <Layout page="home" theme={'white'}>
       <SEO meta={meta} />
       <Hero />
       <div className="container-main">
         <Cursos />
-        <Profile />
+      </div>
+      <Profile />
+      <div className="container-main">
         <Contact />
       </div>
     </Layout>

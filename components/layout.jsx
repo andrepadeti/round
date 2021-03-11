@@ -45,7 +45,12 @@ export default function Layout({ children, page }) {
         <Footer />
       </Context.Provider>
       <style jsx global>
-        {``}
+        {`
+          @mixin clipPath($shape) {
+            clip-path: $shape;
+            -webkit-clip-path: $shape;
+          }
+        `}
       </style>
     </>
   )

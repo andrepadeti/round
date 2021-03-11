@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="row pt-3 bg-secondary text-light justify-content-center border-bottom">
         <div className="col-md-2"></div>
         <div className="col-md-4 col-sm-12 ps-5 ps-md-4 mb-4 mb-md-0">
-          <h5>Round English</h5>
+          <h5 className="logo">R<span className='fs-6'>OUND</span></h5>
           <hr style={{ width: '150px' }} />
           <p>Desenvolva seu potencial.</p>
         </div>
@@ -83,6 +83,10 @@ const Footer = () => {
           h5,
           h6 {
             color: hsl(51, 21%, 94%);
+          }
+
+          .logo{
+            letter-spacing: 1px;
           }
         `}
       </style>

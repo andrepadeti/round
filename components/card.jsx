@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Card = ({ title, text, link, image, alt }) => {
   return (
-    <div className="card bg-lighter mb-3 p-4 m-auto">
+    <div className="card bg-lighter mb-3 p-4 m-auto border-0 shadow">
       <div className="row">
         <div className="col-md-4 text-center">
           <Image
@@ -21,7 +21,7 @@ const Card = ({ title, text, link, image, alt }) => {
             <p className="card-text">{text}</p>
             <Link href={link}>
               {/* <button className="btn btn-primary text-light shadow"> */}
-                Saiba mais
+              Saiba mais
               {/* </button> */}
             </Link>
           </div>

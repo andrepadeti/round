@@ -12,8 +12,10 @@ const Navigation = () => {
   return (
     <>
       <Navbar
+        bg='dark'
+        variant='dark'
         id="navbar"
-        className="bg-light nav-border"
+        className="nav-border"
         expand="md"
         sticky="top"
         onToggle={() => {
@@ -22,21 +24,23 @@ const Navigation = () => {
         expanded={expanded}
       >
         <div className="container">
-          <Link href="/">
-            <a className="d-flex navbar-brand logo">
-              <Image
-                src="/images/bare-logo-transparent.png"
-                alt="logo"
-                width={30}
-                height={30}
-                layout="fixed"
-              />
-              <div>
-                <span className="ms-1 fs-4">R</span>
-                <span className="fs-5">OUND</span>
-              </div>
-            </a>
-          </Link>
+          <div className="bg-light px-3 border rounded">
+            <Link href="/">
+              <a className="d-flex navbar-brand logo">
+                <Image
+                  src="/images/bare-logo-transparent.png"
+                  alt="logo"
+                  width={30}
+                  height={30}
+                  layout="fixed"
+                />
+                <div className='text-dark'>
+                  <span className="ms-1 fs-4">R</span>
+                  <span className="fs-5">OUND</span>
+                </div>
+              </a>
+            </Link>
+          </div>
           <Navbar.Toggle
             ref={togglerRef}
             onClick={() => togglerRef.current.blur()}
@@ -88,7 +92,7 @@ const Navigation = () => {
         {`
           .nav-link {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
+            font-weight: 700;
             // color: hsl(243, 21%, 94%) !important;
           }
 
@@ -103,7 +107,7 @@ const Navigation = () => {
           }
 
           .nav-link:hover {
-            color: #2b2b55 !important;
+            // color: #2b2b55 !important;
           }
         `}
       </style>

@@ -1,8 +1,8 @@
-const SectionTitle = ({ title, id }) => {
+const SectionTitle = ({ title, id, red = false }) => {
   return (
     <>
       <div className="blank" />
-      <h1 id={id} className="text-center mb-4">
+      <h1 id={id} className={`text-center mb-4 ${red && 'text-red'}`}>
         {title}
       </h1>
       <style jsx>
