@@ -13,7 +13,7 @@ const Hero = () => {
           alt="Aulas de inglês personalizadas. Estude com um professor com mais de 20 anos de experiência e com certificação pela Universidade de Cambridge."
         />
         <div className="row align-items-center vh-100 z-index-1">
-          <div className="col-12 col-md-6 py-2 px-4 overlay">
+          <div className="col-12 col-md-6 mb-5 py-2 px-4 overlay">
             <div>
               <h1>Desenvolva seu potencial.</h1>
               <p>
