@@ -3,7 +3,6 @@
 
 @import 'custom-bootstrap';
 
-
 @mixin clipPath($shape) {
   clip-path: $shape;
   -webkit-clip-path: $shape;

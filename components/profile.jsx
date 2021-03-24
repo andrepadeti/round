@@ -13,14 +13,17 @@ const Profile = () => {
         </div>
         <div className="row justify-content-center mb-5">
           <div className="col-10">
-            <img
-              src="/images/myself.jpg"
-              width={1449 / 7}
-              height={1631 / 7}
-              alt=""
-              className="rounded float-none mx-auto d-block my-4 float-md-end mx-md-0 "
-            />
-
+            {/* must wrap image round a div because of this
+            https://github.com/vercel/next.js/issues/23095 */}
+            <div className="float-none mx-auto my-4 float-md-end mx-md-0">
+              <Image
+                src="/images/myself.jpg"
+                width={1449 / 7}
+                height={1631 / 7}
+                alt="profile"
+                className="rounded"
+              />
+            </div>
             <div className="text-light">
               <p>Olá,</p>
               <p>
