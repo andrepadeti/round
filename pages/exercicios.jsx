@@ -55,7 +55,7 @@ const IndexOfExercises = () => {
                 </h6>
                 {exercises.section[section].items.map((item, index) => (
                   <Link href={`/exercicios/${item.url}`} key={index}>
-                    <button className="btn btn-primary shadow mb-2">
+                    <button className="btn btn-primary shadow-sm mb-2">
                       {item.title}
                     </button>
                   </Link>

@@ -12,8 +12,8 @@ const Navigation = () => {
   return (
     <>
       <Navbar
-        bg='dark'
-        variant='dark'
+        bg="dark"
+        variant="dark"
         id="navbar"
         className="nav-border"
         expand="md"
@@ -34,7 +34,7 @@ const Navigation = () => {
                   height={30}
                   layout="fixed"
                 />
-                <div className='text-dark'>
+                <div className="text-dark">
                   <span className="ms-1 fs-4">R</span>
                   <span className="fs-5">OUND</span>
                 </div>
@@ -93,17 +93,10 @@ const Navigation = () => {
           .nav-link {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            // color: hsl(243, 21%, 94%) !important;
           }
 
           .container {
             // background-color: inherit;
-          }
-
-          .cursos {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            // color: #6c63ff !important;
           }
 
           .nav-link:hover {

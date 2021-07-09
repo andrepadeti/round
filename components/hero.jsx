@@ -21,7 +21,7 @@ const Hero = () => {
                 formando alunos para o mercado de trabalho.
               </p>
               <Link href="/#contato">
-                <button type="button" className="btn btn-primary btn-lg shadow">
+                <button type="button" className="btn btn-dark btn-lg shadow">
                   Agende uma entrevista
                 </button>
               </Link>

@@ -23,6 +23,6 @@
     "react-ga": "^3.3.0",
     "react-reveal": "^1.2.2",
     "styled-jsx-plugin-sass": "^1.0.0",
-    "yup": "^0.32.8"
+    "yup": "^0.32.9"
   }
 }
