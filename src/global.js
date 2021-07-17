@@ -106,6 +106,11 @@ export const exercises = {
           url: 'ti-convergencia-tecnologica',
           chosen: false,
         },
+        {
+          title: 'Ameaças à segurança',
+          url: 'ti-ameacas-a-seguranca',
+          chosen: false,
+        }
       ],
     },
     sales_purchasing: {
