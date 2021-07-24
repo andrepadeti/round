@@ -57,7 +57,7 @@ const Exercicio = () => {
         Look at the paragraphs below and decide whether they were written in a
         formal or informal email.
       </p>
-      <figure class="wp-block-image size-large">
+      <figure>
         <Image
           src="/images/exercicios/formal_informal_language.png"
           width={600}

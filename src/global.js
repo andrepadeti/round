@@ -110,7 +110,12 @@ export const exercises = {
           title: 'Ameaças à segurança',
           url: 'ti-ameacas-a-seguranca',
           chosen: false,
-        }
+        },
+        {
+          title: 'Cargos em TI',
+          url: 'ti-cargos-em-ti',
+          chosen: false,
+        },
       ],
     },
     sales_purchasing: {
