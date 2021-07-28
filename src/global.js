@@ -33,6 +33,32 @@ export default global = {
 
 export const exercises = {
   section: {
+    it: {
+      chosen: false,
+      items: [
+        {
+          title: 'Ameaças à segurança',
+          url: 'ti-ameacas-a-seguranca',
+          chosen: false,
+        },
+        {
+          title: 'Cargos em TI',
+          url: 'ti-cargos-em-ti',
+          chosen: false,
+        },
+        {
+          title: 'Soluções em TI',
+          url: 'ti-solucoes-em-ti',
+          chosen: false,
+        },
+        {
+          title: 'Convergência Tecnológica',
+          url: 'ti-convergencia-tecnologica',
+          chosen: false,
+        },
+        
+      ],
+    },
     presentations: {
       chosen: false,
       items: [
@@ -93,31 +119,7 @@ export const exercises = {
         },
       ],
     },
-    it: {
-      chosen: false,
-      items: [
-        {
-          title: 'Soluções em TI',
-          url: 'ti-solucoes-em-ti',
-          chosen: false,
-        },
-        {
-          title: 'Convergência Tecnológica',
-          url: 'ti-convergencia-tecnologica',
-          chosen: false,
-        },
-        {
-          title: 'Ameaças à segurança',
-          url: 'ti-ameacas-a-seguranca',
-          chosen: false,
-        },
-        {
-          title: 'Cargos em TI',
-          url: 'ti-cargos-em-ti',
-          chosen: false,
-        },
-      ],
-    },
+    
     sales_purchasing: {
       chosen: false,
       items: [
