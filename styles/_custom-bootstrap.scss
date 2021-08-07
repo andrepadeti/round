@@ -1,4 +1,5 @@
-$primary: #6961ff;
+// $primary: #6961ff;
+
 $secondary: hsl(277, 15%, 44%);
 $success: hsl(159, 28%, 46%);
 $info: hsl(240, 33%, 25%);
@@ -8,6 +9,8 @@ $light: hsl(243, 21%, 94%);
 $dark: hsl(240, 33%, 25%);
 $hero: hsl(243, 75%, 85%);
 $red: hsl(3, 99%, 61%);
+
+$primary: $info;
 
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';

@@ -31,7 +31,7 @@ const CourseDetails = ({ title, image, alt, body, button }) => {
         <div className="row mb-7">
           <div className="col-12 d-flex justify-content-center">
             <Link href="/#contato">
-              <button className="btn btn-lg btn-primary shadow">
+              <button className="btn btn-lg btn-red text-light shadow">
                 {button.label}
               </button>
             </Link>

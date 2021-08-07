@@ -25,9 +25,14 @@ export default global = {
       },
     },
     button: {
-      label: 'Quero fazer uma entrevista gratuita!',
+      label: 'Quero agendar minha entrevista gratuita!',
       link: '/#contato',
     },
+  },
+  cursos: {
+    button: {
+      label: 'Quero agendar minha entrevista gratuita!',
+    }
   },
 }
 
@@ -56,6 +61,11 @@ export const exercises = {
           url: 'ti-convergencia-tecnologica',
           chosen: false,
         },
+        {
+          title: 'Elementos da GUI',
+          url: 'ti-elementos-da-gui',
+          chosen: false,
+        }
         
       ],
     },

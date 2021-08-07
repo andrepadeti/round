@@ -1,6 +1,7 @@
 import SEO, { meta } from '../../components/SEO'
 import Layout from '../../components/layout'
 import CourseDetails from '../../components/course-details'
+import global from 'src/global'
 
 const Presentations = () => {
   // meta tags
@@ -24,7 +25,7 @@ const Presentations = () => {
     'Se você deseja participar mais ativamente dessas atividades na empresa e mostrar todo o seu potencial nessas situações, então os cursos English for Negotiating e English for Presentations são para você.',
     'Estes são cursos de curta duração e focados em praticar o inglês usado especificamente nessas ocasiões. As aulas são online, você não precisa perder tempo com deslocamento e temos acesso a um enorme conteúdo de material autêntico disponível na internet.',
   ]
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
+  const button = { label: global.cursos.button.label, link: '' }
 
   return (
     <Layout page="presentations">

@@ -46,7 +46,7 @@ const Exercicio = () => {
       </p>
       <p>
         Neste exercício nós vamos ver como definir cada uma dessas palavras.
-        Você precisa ligar as palvras às definições. Vamos em frente!
+        Você precisa ligar as palavras às definições. Vamos em frente!
       </p>
       <h3>Over to you</h3>
       <h4>Exercise 1</h4>

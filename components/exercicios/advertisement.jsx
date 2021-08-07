@@ -11,7 +11,7 @@ const Advertisement = ({ course, button }) => {
         </p>
         <div className="mt-3">
           <Link href={button.link}>
-            <button className="btn btn-primary shadow">
+            <button className="btn btn-red text-light shadow">
               {button.label}
             </button>
           </Link>

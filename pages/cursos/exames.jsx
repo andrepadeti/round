@@ -1,6 +1,7 @@
 import SEO, { meta } from '../../components/SEO'
 import Layout from '../../components/layout'
 import CourseDetails from '../../components/course-details'
+import global from 'src/global'
 
 const Exames = () => {
   // meta tags
@@ -24,7 +25,7 @@ const Exames = () => {
     'Se você deseja tirar um desses certificados, então o curso de Exames Internacionais é para você.',
     'Nesse curso nós vamos trabalhar as técnicas e dar todas as dicas para que você consiga a pontuação necessária no seu exame. As aulas são online, você não precisa perder tempo com deslocamento e temos acesso a um enorme conteúdo de material autêntico disponível na internet.',
   ]
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
+  const button = { label: global.cursos.button.label, link: '' }
 
   return (
     <Layout page="exams">

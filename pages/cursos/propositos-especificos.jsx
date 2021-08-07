@@ -1,6 +1,7 @@
 import SEO, { meta } from '../../components/SEO'
 import Layout from '../../components/layout'
 import CourseDetails from '../../components/course-details'
+import global from 'src/global'
 
 const ESP = () => {
   // meta tags
@@ -23,7 +24,7 @@ const ESP = () => {
     'Se você deseja aperfeiçoar seu inglês e se capacitar para se relacionar com profissionais de outros países, então os cursos de Inglês para Propósitos Específicos são para você.',
     'Esses são cursos rápidos e focados em praticar o inglês para áreas como TI, propaganda e marketing, logística, negociações e outros temas específicos. As aulas são online, você não precisa perder tempo com deslocamento e temos acesso a um enorme conteúdo de material autêntico disponível na internet.',
   ]
-  const button = { label: 'Quero fazer uma entrevista gratuita!', link: '' }
+  const button = { label: global.cursos.button.label, link: '' }
 
   return (
     <Layout page="esp">
