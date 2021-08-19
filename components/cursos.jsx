@@ -23,8 +23,15 @@ const Cursos = () => {
         alt="Cursos oferecidos. Cursos de inglês regulares. Aprenda inglês para usar no dia a dia, em viagens internacionais, para assistir filmes e para acessar a internet."
       />
       <Card
+        title="Inglês para TI"
+        text="Curso para desenvolvedores e que foca nos assuntos da área de TI."
+        link="/cursos/inglesparati"
+        image="it"
+        alt="Cursos oferecidos. Inglês para TI. Curso especialmente desenhado para desenvolvedores."
+      ></Card>
+      <Card
         title="Propósitos Específicos"
-        text="Este curso é para quem precisa aprender a falar de assuntos como: TI • Propaganda e Marketing • Logística • Contabilidade e outros temas."
+        text="Este curso é para quem precisa aprender a falar de assuntos como: Propaganda e Marketing • Logística • Contabilidade e outros temas."
         link="/cursos/propositos-especificos"
         image="esp"
         alt="Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos."

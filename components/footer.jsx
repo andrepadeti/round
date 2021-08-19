@@ -10,7 +10,7 @@ const Footer = () => {
         {/* <div className="col-md-5 col-sm-12 text-center text-md-left mb-4 mb-md-0">
           <h5 className="mb-0">Siga-nos nas mídias sociais!</h5>
         </div> */}
-        <div className="col-md-4 col-sm-12 text-center text-md-left pl-md-5">
+        <div className="col-md-6 col-sm-12 text-center text-md-left pl-md-5">
           <a
             href="https://www.facebook.com/roundenglish"
             className="me-5 me-md-6 text-light"

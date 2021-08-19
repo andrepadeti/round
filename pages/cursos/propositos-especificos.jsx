@@ -17,7 +17,8 @@ const ESP = () => {
   // CourseDetails component variables
   const title = 'Propósitos Específicos'
   const image = 'esp'
-  const alt = 'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
+  const alt =
+    'Cursos oferecidos. Inglês para propósitos específicos. TI, propaganda e marketing, logística, negociações e outros temas específicos.'
   const body = [
     'O mercado pede cada vez mais que você seja capaz de trabalhar em parceria com profissionais de outros países e essa comunicação se dá, é claro, em inglês.',
     'Você não pode perder a oportunidade de trabalhar em um grupo profissional internacional só porque você não consegue se comunicar em inglês na sua área de atuação.',

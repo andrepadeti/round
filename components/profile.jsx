@@ -8,7 +8,7 @@ const Profile = () => {
       <div className="container-main">
         <div className="row mb-4 mb-md-5">
           <div className="col-12">
-            <SectionTitle title="O Professor" id="about" red />
+            <SectionTitle title="O Professor" id="about" darkBackground />
           </div>
         </div>
         <div className="row justify-content-center mb-5">
