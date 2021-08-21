@@ -52,6 +52,11 @@ export const exercises = {
           chosen: false,
         },
         {
+          title: 'Tipos de websites',
+          url: 'ti-tipos-de-websites',
+          chosen: false,
+        },
+        {
           title: 'Soluções em TI',
           url: 'ti-solucoes-em-ti',
           chosen: false,

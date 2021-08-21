@@ -109,9 +109,9 @@ const Inglesparati = () => {
               web. <Link href="/#about">Mais detalhes.</Link>
             </p>
 
-            <div className="d-flex justify-content-center m-5">
+            <div className="d-flex justify-content-center my-5">
               <Link href="/#contato">
-                <button className="btn btn-lg btn-red text-light shadow">
+                <button className="btn btn-lg btn-red text-light  shadow">
                   {global.cursos.button.label}
                 </button>
               </Link>
