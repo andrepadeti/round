@@ -76,7 +76,10 @@ const Exercicio = () => {
           </thead>
         </table>
       </figure>
-      <p>Match the jobs to the people &mdash; Sylvia, Isabelle, Andrew, Mark and Latika.</p>
+      <p>
+        Match the jobs to the people &mdash; Sylvia, Isabelle, Andrew, Mark and
+        Latika.
+      </p>
       <Answers>
         <h4>Answers</h4>
         <p>1 Mark and Latika; 2 Andrew; 3 Sylvia; 4 Isabelle</p>

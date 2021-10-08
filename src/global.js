@@ -32,8 +32,10 @@ export default global = {
   cursos: {
     button: {
       label: 'Quero agendar minha entrevista gratuita!',
-    }
+    },
   },
+  whatsapp:
+    'https://wa.me/5511963089663?text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+o+curso+de+ingl%C3%AAs.',
 }
 
 export const exercises = {
@@ -70,8 +72,7 @@ export const exercises = {
           title: 'Elementos da GUI',
           url: 'ti-elementos-da-gui',
           chosen: false,
-        }
-        
+        },
       ],
     },
     presentations: {
@@ -134,7 +135,7 @@ export const exercises = {
         },
       ],
     },
-    
+
     sales_purchasing: {
       chosen: false,
       items: [

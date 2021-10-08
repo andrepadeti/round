@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import global from '../src/global'
 
 const color = 'red'
 
@@ -52,8 +53,10 @@ const Footer = () => {
             </a>
           </p>
           <p>
-            <FontAwesomeIcon icon={['fab', 'whatsapp']} className="me-2" />
-            (11) 96308.9663
+            <a href={global.whatsapp} className="text-light">
+              <FontAwesomeIcon icon={['fab', 'whatsapp']} className="me-2" />
+              (11) 96308.9663
+            </a>
           </p>
         </div>
       </div>

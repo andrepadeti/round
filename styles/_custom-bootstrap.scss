@@ -23,7 +23,7 @@ $custom-colors: (
   'lighter': hsl(243, 21%, 96%),
   'darker': hsla(51, 21%, 94%, 0.663),
   'hero': $hero,
-  'red': $red
+  'red': $red,
 );
 
 $spacers: (
@@ -49,7 +49,7 @@ $font-sizes: (
   7: 0.875rem,
 );
 
-$font-family-sans-serif: 'Inter', sans-serif, system-ui;
+$font-family-sans-serif: 'Cantarell', 'Inter', sans-serif, system-ui;
 $font-weight-base: $font-weight-light;
 
 // same hue as the color theme but darker (avoid black!):

@@ -12,7 +12,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="row justify-content-center mb-5">
-          <div className="col-10">
+          <div className="col-12">
             {/* must wrap image round a div because of this
             https://github.com/vercel/next.js/issues/23095 */}
             <div className="float-none mx-auto my-4 float-md-end mx-md-0">

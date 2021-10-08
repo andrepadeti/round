@@ -60,8 +60,7 @@ const Inglesparati = () => {
                 emprego em TI
               </li>
               <li>
-                Fazer apresentações corporativas e para conferências na área de
-                TI
+                Fazer apresentações corporativas e conferências na área de TI
               </li>
               <li>
                 Conduzir entrevistas em inglês de candidatos para cargos na área
@@ -70,7 +69,7 @@ const Inglesparati = () => {
             </ul>
             <p>Este curso vai te ajudar a alcançar seus objetivos!</p>
 
-            <div className="d-flex justify-content-center mt-5">
+            <div className="d-flex justify-content-center my-6">
               <Link href="/#contato">
                 <button className="btn btn-lg btn-red text-light shadow">
                   {global.cursos.button.label}
@@ -109,7 +108,7 @@ const Inglesparati = () => {
               web. <Link href="/#about">Mais detalhes.</Link>
             </p>
 
-            <div className="d-flex justify-content-center my-5">
+            <div className="d-flex justify-content-center my-6">
               <Link href="/#contato">
                 <button className="btn btn-lg btn-red text-light  shadow">
                   {global.cursos.button.label}
@@ -117,7 +116,7 @@ const Inglesparati = () => {
               </Link>
             </div>
 
-            <p className='mb-5'>
+            <p className="mb-5">
               O mercado de trabalho em TI é internacional, feito em parceria com
               profissionais de outros países e a comunicação se dá, é claro, em
               inglês. Se você fosse um advogado e quisesse trabalhar para fora
@@ -125,7 +124,7 @@ const Inglesparati = () => {
               leis. Isso não é verdade para a área de TI! Você já tem a
               experiência que vale em qualquer lugar do mundo. Não dá para
               continuar perdendo oportunidades de trabalho só porque você ainda
-              não consegue se falar inglês.
+              não consegue se comunicar inglês.
             </p>
           </div>
         </div>
@@ -135,6 +134,18 @@ const Inglesparati = () => {
           h2 {
             margin-block-start: 4rem;
             margin-block-end: 1.5rem;
+          }
+
+          button {
+            max-width: 20em;
+          }
+
+          * {
+            line-height: 1.8em;
+          }
+
+          * + p {
+            margin-top: 2rem;
           }
         `}
       </style>

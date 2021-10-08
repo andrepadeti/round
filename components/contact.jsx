@@ -1,5 +1,6 @@
 import SectionTitle from './sectionTitle'
 import Form from './form'
+import global from '../src/global'
 
 const Contact = () => {
   return (
@@ -13,7 +14,8 @@ const Contact = () => {
             email para{' '}
             <a href="mailto:contato@roundenglish.com.br">
               contato@roundenglish.com.br
-            </a>{' '}
+            </a>
+            , me mande uma <a href={global.whatsapp}>mensagem pelo WhatsApp</a>{' '}
             ou utilize este formulário:
           </p>
         </div>

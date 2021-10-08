@@ -16,7 +16,7 @@ const Advertisement = ({ course, button }) => {
   }
 
   return (
-    <div className="row row-cols-12 mt-3 mb-5">
+    <div className="row row-cols-12 mt-5 mb-5">
       <div className="card bg-lighter d-flex align-items-center p-4 shadow">
         <p>{copy}</p>
         <div className="mt-3">

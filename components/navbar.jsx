@@ -91,7 +91,7 @@ const Navigation = () => {
       <style jsx>
         {`
           .nav-link {
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-secondary);
             font-weight: 700;
           }
 
